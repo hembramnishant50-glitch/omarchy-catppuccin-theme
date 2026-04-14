@@ -1,0 +1,32 @@
+[meta]
+version = 1
+name = "Omarchy Macchiato"
+description = "Catppuccin Macchiato theme with Purple accents."
+variant = "dark"
+inherits = "vicinae-dark"
+icon = "/home/nishant/.local/share/omarchy/icon.png"
+
+[colors.core]
+background = "#1e2030"
+foreground = "#cad3f5"
+secondary_background = "#24273a"
+border = "#c29df2"
+accent = "#be9aee"
+
+[colors.list.item.hover]
+background = "#363a4f"
+foreground = "#cad3f5"
+
+[colors.list.item.selection]
+background = "#be9aee"
+foreground = "#1e2030"
+
+[colors.accents]
+blue = "#8aadf4"
+green = "#a6da95"
+magenta = "#f5bde6"
+orange = "#f5a97f"
+purple = "#be9aee"
+red = "#ed8796"
+yellow = "#eed49f"
+cyan = "#8bd5ca"

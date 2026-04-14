@@ -1,0 +1,65 @@
+/* Dynamic Color Palette - Catppuccin Macchiato */
+@define-color background #1e2030;
+@define-color foreground #cad3f5;
+
+@define-color color0 #1e2030; /* Black */
+@define-color color1 #ed8796; /* Red */
+@define-color color2 #a6da95; /* Green */
+@define-color color3 #eed49f; /* Yellow */
+@define-color color4 #be9aee; /* Blue -> Your Theme Purple */
+@define-color color5 #f5bde6; /* Magenta */
+@define-color color6 #8bd5ca; /* Cyan */
+@define-color color7 #b8c0e0; /* White */
+@define-color color8 #5b6078; /* Bright Black */
+@define-color color9 #ed8796; /* Bright Red */
+@define-color color10 #a6da95; /* Bright Green */
+@define-color color11 #eed49f; /* Bright Yellow */
+@define-color color12 #8aadf4; /* Bright Blue */
+@define-color color13 #be9aee; /* Bright Magenta */
+@define-color color14 #8bd5ca; /* Bright Cyan */
+@define-color color15 #cad3f5; /* Bright White */
+
+/* Base GTK theme variables */
+@define-color theme_bg_color @background;
+@define-color theme_fg_color @foreground;
+@define-color theme_base_color @background;
+@define-color theme_text_color @foreground;
+@define-color theme_selected_bg_color @color4;
+@define-color theme_selected_fg_color @background;
+@define-color insensitive_bg_color alpha(@background, 0.5);
+@define-color insensitive_fg_color alpha(@foreground, 0.5);
+@define-color accent_bg_color @color4;
+@define-color accent_fg_color @background;
+@define-color accent_color @color4;
+
+/* Rounded corners to match Omarchy ricing */
+window, 
+.background, 
+headerbar, 
+button, 
+entry, 
+popover, 
+dialog {
+    border-radius: 12px;
+}
+
+/* Specific fix for headerbars to look like floating pills */
+headerbar {
+    background-color: alpha(@background, 0.8);
+    border-bottom: 1px solid alpha(@color4, 0.3);
+    margin: 4px;
+    padding: 0 8px;
+}
+
+/* Link colors */
+@define-color link_color #8aadf4;
+@define-color link_visited_color #f5bde6;
+
+/* Selection colors */
+@define-color selection_bg_color @color4;
+@define-color selection_fg_color @background;
+
+/* SVG Icons filter - Updated for Catppuccin Foreground */
+.svg-icon {
+    filter: brightness(0) saturate(100%) invert(88%) sepia(10%) saturate(542%) hue-rotate(188deg) brightness(101%) contrast(93%);
+}

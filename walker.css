@@ -1,0 +1,50 @@
+/* Catppuccin Macchiato - Solid Backgrounds */
+@define-color selected-text #be9aee;      /* Your Theme Purple */
+@define-color text #cad3f5;               /* Macchiato Text */
+@define-color base #1e2030;               /* Macchiato Mantle */
+@define-color border #c29df2;             /* Your 2px Purple Border */
+@define-color foreground #cad3f5;         /* Macchiato Text */
+@define-color background #1e2030;         /* Macchiato Mantle */
+@define-color hover #8aadf4;              /* Macchiato Blue */
+@define-color selected-box #be9aee;       /* Your Theme Purple */
+
+window .search-container,
+window .search {
+  background: @base;                      /* Solid Background */
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+  color: @foreground;
+  border: 1px solid @border;              /* Solid Border */
+  border-radius: 10px;
+  padding: 3px 16px;
+  margin-top: 1px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.box-wrapper {
+  background: @base;                      /* Solid Background */
+  border: 2px solid @border;            
+  border-radius: 28px;
+}
+
+child:selected {
+  border-radius: 10px;
+  /* Keep a subtle tint for the selection bar so text remains readable */
+  background-color: alpha(@selected-box, 0.2); 
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+  transition: background-color 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+child:selected .item-box {
+  transition: transform 0.14s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: translateX(6px);
+}
+
+child:selected .item-box * {
+  color: @selected-text;                  
+}
+
+child:hover {
+  background-color: alpha(@hover, 0.15);
+  color: @hover;
+}

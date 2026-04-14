@@ -1,0 +1,59 @@
+/* --- Wofi Catppuccin Macchiato Pill Style --- */
+@define-color bg       #1e2030;
+@define-color fg       #cad3f5;
+@define-color purple   #be9aee; /* Your Active Purple */
+@define-color border   #c29df2; /* Your Theme Border */
+@define-color surface  #363a4f;
+
+window {
+    background-color: @bg;
+    color: @fg;
+    border: 2px solid @border;
+    border-radius: 20px;
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+#outer-box {
+    margin: 10px;
+}
+
+input {
+    background-color: @surface;
+    color: @fg;
+    border: 1px solid @border;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+input:focus {
+    border: 1px solid @purple;
+}
+
+#entry {
+    padding: 8px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+#entry:selected {
+    background-color: @purple;
+    color: @bg;
+}
+
+#text:selected {
+    color: @bg;
+}
+
+scrollbar {
+    background-color: transparent;
+}
+
+scrollbar slider {
+    background-color: @surface;
+    border-radius: 10px;
+}
+
+scrollbar slider:hover {
+    background-color: @purple;
+}

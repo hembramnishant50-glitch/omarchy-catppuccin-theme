@@ -1,0 +1,52 @@
+/* --- Catppuccin Macchiato: Slim Pill OSD --- */
+@define-color background-color #1e2030; /* Mantle */
+@define-color border-color     #c29df2; /* Your Theme Purple */
+@define-color text-color       #cad3f5; /* Text */
+@define-color progress-fill    #be9aee; /* Active Workspace Purple */
+
+window {
+    background-color: transparent;
+    border: none;
+}
+
+/* The actual box around the content */
+.osd {
+    background-color: alpha(@background-color, 0.85);
+    border: 2px solid @border-color;
+    border-radius: 999px;
+    padding: 8px 20px;
+}
+
+image {
+    color: @text-color;
+    -gtk-icon-transform: scale(0.8);
+    margin-right: 12px;
+}
+
+label {
+    color: @text-color;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* The bar background */
+progressbar trough {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 999px;
+    min-height: 6px;
+    min-width: 180px;
+    border: none;
+}
+
+/* The colored part of the bar */
+progressbar progress {
+    background-color: @progress-fill;
+    border-radius: 999px;
+    min-height: 6px;
+}
+
+/* Optional: remove default bar styling that might block roundness */
+progress, highlight {
+    border-radius: 999px;
+    background-color: @progress-fill;
+}

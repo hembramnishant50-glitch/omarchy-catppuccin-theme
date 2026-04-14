@@ -1,0 +1,50 @@
+# ========= Border (Inactive) =========
+file_panel_border = '#5b6078'
+sidebar_border = '#5b6078'
+footer_border = '#5b6078'
+
+# ========= Border Active (Your Theme Purple) =========
+file_panel_border_active = '#be9aee'
+sidebar_border_active = '#be9aee'
+footer_border_active = '#be9aee'
+modal_border_active = '#be9aee'
+
+# ========= Background (Macchiato Base) =========
+full_screen_bg = '#1e2030'
+file_panel_bg = '#1e2030'
+sidebar_bg = '#1e2030'
+footer_bg = '#1e2030'
+modal_bg = '#1e2030'
+
+# ========= Foreground (Text) =========
+full_screen_fg = '#cad3f5'
+file_panel_fg = '#cad3f5'
+sidebar_fg = '#cad3f5'
+footer_fg = '#cad3f5'
+modal_fg = '#cad3f5'
+
+# ========= Special Color =========
+cursor = '#f4dbd6'
+correct = '#a6da95'
+error = '#ed8796'
+hint = '#8aadf4'
+cancel = '#ee99a0'
+gradient_color = ['#1e2030', "#363a4f"]
+
+# ========= File Panel Special Items =========
+file_panel_top_directory_icon = '#be9aee'
+file_panel_top_path = '#9399b2'
+file_panel_item_selected_fg = '#1e2030'
+file_panel_item_selected_bg = '#be9aee'
+
+# ========= Sidebar Special Items =========
+sidebar_title = '#be9aee'
+sidebar_item_selected_fg = '#1e2030'
+sidebar_item_selected_bg = '#be9aee'
+sidebar_divider = '#5b6078'
+
+# ========= Modal Special Items =========
+modal_cancel_fg = "#1e2030"
+modal_cancel_bg = '#ed8796'
+modal_confirm_fg = "#1e2030"
+modal_confirm_bg = '#a6da95'

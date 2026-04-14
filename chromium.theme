@@ -1,7 +1,8 @@
 {
-  "manifest_version": 2,
-  "name": "Omarchy Catppuccin Macchiato",
+  "manifest_version": 3,
+  "name": "Omarchy Macchiato",
   "version": "1.0",
+  "description": "Solid Catppuccin Macchiato theme matching the Omarchy system bar.",
   "theme": {
     "colors": {
       "frame": [30, 32, 48],

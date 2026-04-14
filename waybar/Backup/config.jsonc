@@ -1,0 +1,180 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "height": 38,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "fixed-center": true,
+
+    "modules-center": ["group/main-pill"],
+
+    "group/main-pill": {
+        "orientation": "horizontal",
+        "modules": [
+            "clock",
+            "hyprland/window",
+            "hyprland/workspaces",
+            "pulseaudio",
+            "network",
+            "battery"
+        ]
+    },
+
+    "clock": {
+        "format": "<b>{:%I:%M %p}</b>",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode"          : "month",
+            "weeks-pos"     : "right",
+            "on-scroll"     : 1,
+            "format": {
+                "months":     "<span color='#c29df2'><b>{}</b></span>",
+                "days":       "<span color='#cad3f5'><b>{}</b></span>",
+                "weeks":      "<span color='#5b6078'><b>W{}</b></span>",
+                "weekdays":   "<span color='#eed49f'><b>{}</b></span>",
+                "today":      "<span color='#c29df2'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions":  {
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+
+    "hyprland/window": {
+        "format": "{class}", 
+        "max-length": 35,
+        "separate-outputs": true,
+        
+        "rewrite": {
+    // --- Defaults & Omarchy ---
+    "": "󱄅 Omarchy",
+    "waybar": "󱑆 Waybar",
+    "walker": "󰀻 Walker",
+    "My_app_installer.sh": "󱧼 Installer",
+    "org.omarchy.terminal": " Terminal",
+    "omarchy-launch-wifi": "󰖩 WiFi Manager",
+    "omarchy-launch-audio": "󰓃 Audio Settings",
+
+    // --- Flathub ---
+    "com.usebottles.bottles": "󱄲 Bottles",
+        "bottles": "󱄲 Bottles",
+
+    // --- Google Suite ---
+    "google-chrome": " Chrome",
+    "google-gmail": "󰊭 Gmail",
+    "chrome-mail.google.com__-default": "󰊭 Gmail",
+    "google-drive": "󰝰 Drive",
+    "chrome-drive.google.com__-default": "󰝰 Drive",
+    "google-calendar": "󰸗 Calendar",
+    "chrome-calendar.google.com__-default": "󰸗 Calendar",
+    "google-keep": "󰟶 Keep",
+    "chrome-keep.google.com__-default": "󰟶 Keep",
+    "google-docs": "󰈙 Docs",
+    "google-sheets": "󰈛 Sheets",
+    "google-slides": "󰈧 Slides",
+    "google-meet": "󰻵 Meet",
+    "google-photos": "󰄄 Photos",
+    "google-youtube": "󰗃 YouTube",
+    "chrome-youtube.com__-default": "󰗃 YouTube",
+    "chrome-notebooklm.google.com__-default": "󰠮 NotebookLM",
+    "chrome-gemini.google.com__app-Default": " Gemini AI",
+
+    // --- Proton Services ---
+    "chrome-mail.proton.me__-default": "󰇮 Proton Mail",
+    "chrome-calendar.proton.me__-default": "󰸗 Proton Calendar",
+    "chrome-drive.proton.me__-default": "󰝰 Proton Drive",
+    "chrome-pass.proton.me__-default": "󰷖 Proton Pass",
+    "chrome-lumo.proton.me__-Default": "󱔐 Luno AI",
+
+    // --- Student & Research ---
+    "md.obsidian.Obsidian": "󱓧 Obsidian",
+    "obsidian": "󱓧 Obsidian",
+    "net.ankiweb.Anki": "󰮔 Anki",
+    "anki": "󰮔 Anki",
+    "org.zotero.Zotero": "󱓷 Zotero",
+    "zotero": "󱓷 Zotero",
+    "org.libreoffice.LibreOffice": "󰏆 LibreOffice",
+    "libreoffice-writer": "󰏆 Writer",
+    "com.github.xournalpp.xournalpp": "󱞈 Xournal++",
+    "com.github.johnfactotum.Foliate": "󰂵 Foliate",
+
+    // --- Development & Terminals ---
+    "com.visualstudio.code": "󰨞 VS Code",
+    "code-oss": "󰨞 VS Code",
+    "code": "󰨞 VS Code",
+    "ghostty": " Ghostty",
+    "com.mitchellh.ghostty": " Ghostty",
+    "kitty": " Kitty",
+    "nvim": " Neovim",
+    "vim": " Vim",
+    "alacritty": " Alacritty",
+
+    // --- Social & Communication ---
+    "com.discordapp.Discord": " Discord",
+    "discord": " Discord",
+    "chrome-discord.com__channels_@me-Default": " Discord",
+    "org.telegram.desktop": " Telegram",
+    "telegram-desktop": " Telegram",
+    "com.ayugram.desktop": " AyuGram",
+    "whatsapp": " WhatsApp",
+    "reddit": " Reddit",
+
+    // --- AI ---
+    "chatgpt": "󰚩 ChatGPT",
+    "gemini": " Gemini AI",
+    "claude": " Claude AI",
+    "perplexity": "󰚩 Perplexity",
+
+    // --- Media & Utilities ---
+    "org.videolan.VLC": "󰕼 VLC",
+    "spotify": " Spotify",
+    "thunar": " Files",
+    "org.gnome.Nautilus": " Files",
+    "com.bitwarden.desktop": "󰞀 Bitwarden",
+    "com.github.flameshot.Flameshot": "󰄀 Flameshot",
+    "pavucontrol": "󰓃 Audio Control",
+    "qbittorrent": "󱑢 qBittorrent",
+    "com-abdownloadmanager-desktop-AppKt": "󰇚 AB Download"
+    
+
+    
+    }
+
+    },
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "all-outputs": true,
+        "sort-by-number": true,
+        "persistent-workspaces": { "*": 3 }
+    },
+
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": "󰝟",
+        "format-icons": { "default": ["󰕿", "󰖀", "󰕾"] },
+        "on-click": "omarchy-launch-audio"
+    },
+
+    "network": {
+        "format-wifi": " ",
+        "format-disconnected": "󰖪 ",
+        "on-click": "omarchy-launch-wifi",
+        "tooltip-format": "{essid}"
+    },
+
+    "battery": {
+        "states": { "warning": 30, "critical": 15 },
+        "format": "{icon}",
+        "format-icons": [" ", " ", " ", " ", " "],
+        "on-click": "omarchy-menu power",
+        "tooltip-format": "{capacity}%"
+    }
+}

@@ -1,56 +1,80 @@
-/* Catppuccin Macchiato Palette */
-@define-color base            #24273a;
-@define-color mantle          #1e2030; /* Main Background */
-@define-color crust           #181926;
-@define-color text            #cad3f5;
-@define-color subtext         #a5adcb;
-@define-color surface         #5b6078;
-@define-color overlay         #8087a2;
+/* ────────────────────────────────────────────────────────────
+   COLOR VARIABLES
+   ──────────────────────────────────────────────────────────── */
+@define-color base     #1e2030;
+@define-color text     #cad3f5;
+@define-color lavender #c29df2;
+@define-color mauve    #be9aee;
 
-/* Accents */
-@define-color mauve           #c6a0f6;
-@define-color blue            #8aadf4;
-@define-color green           #a6da95;
-@define-color peach           #f5a97f;
-@define-color selected-accent @mauve; 
-
-window {
-  background: transparent;
+/* ────────────────────────────────────────────────────────────
+   MAIN WINDOW
+   ──────────────────────────────────────────────────────────── */
+window#waybar {
+    background-color: @base;
+    border-bottom: 2px solid @lavender;
+    box-shadow: 0px 4px 10px -2px rgba(194, 157, 242, 0.4);
 }
 
-window .box-wrapper {
-  background: alpha(@mantle, 0.92); /* Using the requested Main Color */
-  color: @text;
-  border: 2px solid alpha(@surface, 0.6);
-  border-radius: 14px;
-  padding: 8px;
-  box-shadow: 0 4px 12px alpha(@crust, 0.5);
+/* ────────────────────────────────────────────────────────────
+   WORKSPACES (Fixing Workspace 5 Color)
+   ──────────────────────────────────────────────────────────── */
+#workspaces button,
+#workspaces button.persistent,
+#workspaces button.hidden,
+#workspaces button.empty {
+    color: @text; /* Forces Workspace 5 and others to #cad3f5 */
+    padding: 0 8px;
+    border-bottom: 2px solid transparent;
+    background: transparent;
 }
 
-window .search-container,
-window .search {
-  background: alpha(@base, 0.6);
-  color: @text;
-  border: 1px solid alpha(@overlay, 0.3);
-  border-radius: 12px;
-  padding: 8px 12px;
-  margin-top: 1px;
-  font-size: 14px;
+#workspaces button.active {
+    color: @mauve;
+    border-bottom: 2px solid @mauve;
+    background: linear-gradient(to top, rgba(190, 154, 238, 0.15), transparent);
 }
 
-window child {
-  background: transparent;
-  color: @subtext;
-  border-radius: 10px;
-  padding: 6px 10px;
-  margin: 2px 0;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+/* ────────────────────────────────────────────────────────────
+   MODULE SPACING (Bluetooth, Wifi, Sound, CPU, Battery)
+   ──────────────────────────────────────────────────────────── */
+/* Increased horizontal padding for a wider, cleaner look */
+#pulseaudio,
+#network,
+#cpu,
+#battery,
+#bluetooth,
+#clock {
+    color: @text;
+    padding: 0 1px; /* Increased to 18px for clear separation */
+    margin: 0;
 }
 
-window child:selected,
-window child:focus {
-  background: alpha(@selected-accent, 0.15);
-  color: @selected-accent;
-  font-weight: 600;
-  transform: translateX(4px);
+/* Space specifically for internal Tray icons (Bluetooth/Wifi if in tray) */
+#tray {
+    padding: 0 15px;
+}
+
+#tray > .passive,
+#tray > .active,
+#tray > .needs-attention {
+    margin: 0 12px; /* Adds significant space between tray items */
+}
+
+/* Ensure icons/text inside labels stay the right color */
+label {
+    color: @text;
+}
+
+/* ────────────────────────────────────────────────────────────
+   TOOLTIPS & CALENDAR
+   ──────────────────────────────────────────────────────────── */
+tooltip {
+    background: @base;
+    border: 2px solid @mauve;
+    border-radius: 7px;
+}
+
+tooltip label {
+    padding: 10px;
+    color: @text;
 }

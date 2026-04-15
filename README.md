@@ -32,4 +32,4 @@ Designed for maximum readability and a clean workspace, this theme strictly avoi
 Applying the theme to your Omarchy setup is fully automated via the Omarchy theme installer. Simply run the following command in your terminal:
 
 ```bash
-omarchy-theme-install [https://github.com/hembramnishant50-glitch/omarchy-macchiato-core-theme.git](https://github.com/hembramnishant50-glitch/omarchy-macchiato-core-theme.git)
+omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-macchiato-core-theme.git

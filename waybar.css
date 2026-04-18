@@ -11,18 +11,23 @@
    ──────────────────────────────────────────────────────────── */
 window#waybar {
     background-color: @base;
+    border: none;
+    box-shadow: none;
+}
+
+/* ← THIS draws the full bottom border line */
+window#waybar > box {
     border-bottom: 2px solid @lavender;
-    box-shadow: 0px 4px 10px -2px rgba(194, 157, 242, 0.4);
 }
 
 /* ────────────────────────────────────────────────────────────
-   WORKSPACES (Fixing Workspace 5 Color)
+   WORKSPACES
    ──────────────────────────────────────────────────────────── */
 #workspaces button,
 #workspaces button.persistent,
 #workspaces button.hidden,
 #workspaces button.empty {
-    color: @text; /* Forces Workspace 5 and others to #cad3f5 */
+    color: @text;
     padding: 0 8px;
     border-bottom: 2px solid transparent;
     background: transparent;
@@ -35,9 +40,8 @@ window#waybar {
 }
 
 /* ────────────────────────────────────────────────────────────
-   MODULE SPACING (Bluetooth, Wifi, Sound, CPU, Battery)
+   MODULE SPACING
    ──────────────────────────────────────────────────────────── */
-/* Increased horizontal padding for a wider, cleaner look */
 #pulseaudio,
 #network,
 #cpu,
@@ -45,11 +49,10 @@ window#waybar {
 #bluetooth,
 #clock {
     color: @text;
-    padding: 0 1px; /* Increased to 18px for clear separation */
+    padding: 0 1px;
     margin: 0;
 }
 
-/* Space specifically for internal Tray icons (Bluetooth/Wifi if in tray) */
 #tray {
     padding: 0 15px;
 }
@@ -57,16 +60,15 @@ window#waybar {
 #tray > .passive,
 #tray > .active,
 #tray > .needs-attention {
-    margin: 0 12px; /* Adds significant space between tray items */
+    margin: 0 12px;
 }
 
-/* Ensure icons/text inside labels stay the right color */
 label {
     color: @text;
 }
 
 /* ────────────────────────────────────────────────────────────
-   TOOLTIPS & CALENDAR
+   TOOLTIPS
    ──────────────────────────────────────────────────────────── */
 tooltip {
     background: @base;

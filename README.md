@@ -4,7 +4,7 @@
 
 # ☕ Omarchy Macchiato Core
 
-**A solid-state, zero-blur Catppuccin Macchiato theme for [Omarchy](https://omarchy.dev)**
+**A solid-state, zero-blur Catppuccin Macchiato theme for [Omarchy](https://omarchy.org/)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-c29df2?style=flat-square)](LICENSE)
 [![Theme: Macchiato](https://img.shields.io/badge/Catppuccin-Macchiato-be9aee?style=flat-square)](https://github.com/catppuccin/catppuccin)

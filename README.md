@@ -11,7 +11,13 @@
 [![WM: Hyprland](https://img.shields.io/badge/WM-Hyprland-cad3f5?style=flat-square)](https://hyprland.org)
 [![Bar: Waybar](https://img.shields.io/badge/Bar-Waybar-cad3f5?style=flat-square)](https://github.com/Alexays/Waybar)
 
-<img src="https://raw.githubusercontent.com/hembramnishant50-glitch/omarchy-macchiato-core-theme/main/preview.png" alt="Omarchy Macchiato Core Preview" width="800"/>
+<img src="https://raw.githubusercontent.com/hembramnishant50-glitch/omarchy-macchiato-core-theme/main/assets/preview-desktop.png" alt="Omarchy Macchiato Core — Desktop" width="800"/>
+
+<br/>
+
+| Waybar | Tools Launcher |
+|:---:|:---:|
+| ![Waybar](https://raw.githubusercontent.com/hembramnishant50-glitch/omarchy-macchiato-core-theme/main/assets/preview-waybar.png) | ![Tools](https://raw.githubusercontent.com/hembramnishant50-glitch/omarchy-macchiato-core-theme/main/assets/preview-tools.png) |
 
 </div>
 
@@ -35,17 +41,31 @@ Pure hex colors throughout. No transparency. No blur. Every pixel is intentional
 ### 📊 The Core Waybar
 A fully hand-tuned Waybar config built from the ground up:
 
-- **Edge-to-edge 2px downside border** in `#c29df2` Lavender
-- **Unique inset neon underglow trick** — bypasses compositor clipping that breaks most border implementations
-- **Optimized 16px module spacing** for a breathable, uncrowded layout
+- **Edge-to-edge 2px downside border** in `#c29df2` Lavender with an inset neon underglow trick that bypasses compositor clipping
+- **Left:** workspace indicators (`1 2 3 4`) + active app name — the active workspace pill renders in solid Mauve `#be9aee`
+- **Center:** clean clock display in `#cad3f5`
+- **Right:** network, Bluetooth, volume, screen, and battery modules — all consistently spaced at 16px
 - **Custom charging states** with a dedicated `#39515A` battery indicator color
-- **Fixed empty workspace rendering** — workspaces always render correctly, even when empty
+- **Fixed empty workspace rendering** — workspaces render correctly at all times, even when empty
 
 ### 🌐 Seamless Browser Integration
 Includes a custom Chromium `manifest.json` that skins your browser to match the system's exact hex codes. The web and the desktop finally look like one environment.
 
 ### 🔤 Typography
 Clean, bold configuration for **JetBrainsMono Nerd Font** — crisp at small sizes, iconic at large ones.
+
+### 🧰 Built-in Tools Launcher
+The theme ships with a themed, searchable tools launcher giving you quick access to system utilities — all styled in Macchiato colors with a dark card UI and `#c29df2` border:
+
+| Tool | Description |
+|------|-------------|
+| 🔐 **WireGuard** | Toggle VPN tunnel on/off instantly |
+| 🎬 **YouTube DL** | Download videos from the terminal, GUI-style |
+| 🧹 **Omarchy Cleaner** | Clear caches, orphaned packages & temp files |
+| 🗡️ **App Killer** | Force-kill any running process by name |
+| 🛡️ **Scan Malware** | Quick malware/rootkit scan via ClamAV / rkhunter |
+| 🌐 **Spoof MAC** | Randomize your MAC address in one click |
+| 🔧 **Install Dependencies** | Auto-install all missing theme dependencies |
 
 ---
 
@@ -112,10 +132,20 @@ omarchy-macchiato-core-theme/
 │   ├── config              # Module layout & settings
 │   ├── style.css           # Full Macchiato color scheme
 │   └── scripts/            # Helper scripts (auto-chmod'd on install)
+├── tools/
+│   ├── wireguard.sh        # VPN toggle
+│   ├── youtube-dl.sh       # Video downloader
+│   ├── cleaner.sh          # System cleanup
+│   ├── app-killer.sh       # Force-kill processes
+│   ├── scan-malware.sh     # Malware/rootkit scan
+│   ├── spoof-mac.sh        # MAC address randomizer
+│   └── install-deps.sh     # Dependency installer
 ├── chromium/
 │   └── manifest.json       # Browser skin for Chromium/Chrome
 └── assets/
-    └── preview.png         # Theme screenshot
+    ├── preview-desktop.png # Full desktop screenshot
+    ├── preview-waybar.png  # Waybar close-up
+    └── preview-tools.png   # Tools launcher screenshot
 ```
 
 ---

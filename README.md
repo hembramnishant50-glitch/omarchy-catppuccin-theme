@@ -54,18 +54,23 @@ Includes a custom Chromium `manifest.json` that skins your browser to match the 
 ### 🔤 Typography
 Clean, bold configuration for **JetBrainsMono Nerd Font** — crisp at small sizes, iconic at large ones.
 
-### 🧰 Built-in Tools Launcher
-The theme ships with a themed, searchable tools launcher giving you quick access to system utilities — all styled in Macchiato colors with a dark card UI and `#c29df2` border:
+### 🧰 Built-in Scripts
+The theme ships **12 ready-to-use scripts** inside `~/.config/waybar/scripts/`, all auto-made executable on install. Accessible via the themed, searchable launcher:
 
-| Tool | Description |
-|------|-------------|
-| 🔐 **WireGuard** | Toggle VPN tunnel on/off instantly |
-| 🎬 **YouTube DL** | Download videos from the terminal, GUI-style |
-| 🧹 **Omarchy Cleaner** | Clear caches, orphaned packages & temp files |
-| 🗡️ **App Killer** | Force-kill any running process by name |
-| 🛡️ **Scan Malware** | Quick malware/rootkit scan via ClamAV / rkhunter |
-| 🌐 **Spoof MAC** | Randomize your MAC address in one click |
-| 🔧 **Install Dependencies** | Auto-install all missing theme dependencies |
+| Script | Description |
+|--------|-------------|
+| `wg-manager.sh` | 🔐 WireGuard VPN — connect, disconnect & status toggle |
+| `yt-dl.sh` | 🎬 YouTube DL — download videos/audio from the terminal |
+| `app-killer.sh` | 🗡️ App Killer — force-kill any running process by name |
+| `clamav-scanner.sh` | 🛡️ ClamAV Scanner — full malware scan via ClamAV |
+| `mac-spoofer.sh` | 🌐 MAC Spoofer — randomize your MAC address instantly |
+| `metadata_cleaner.sh` | 🧹 Metadata Cleaner — strip EXIF & metadata from files |
+| `shredder.sh` | 🔥 Shredder — securely wipe files beyond recovery |
+| `tor_firefox_rotator.sh` | 🧅 Tor + Firefox — rotate Tor identity & launch Firefox |
+| `spotify.sh` | 🎵 Spotify — launch or control Spotify playback |
+| `window-info.sh` | 🪟 Window Info — display active window class & title |
+| `setting.sh` | ⚙️ Settings — open the Omarchy settings launcher |
+| `setting (Copy).sh` | ⚙️ Settings (backup copy) |
 
 ---
 
@@ -127,25 +132,28 @@ echo "✔ Waybar restarted."
 
 ```
 omarchy-macchiato-core-theme/
-├── theme.conf              # Main theme declaration
+├── theme.conf                    # Main theme declaration
 ├── waybar/
-│   ├── config              # Module layout & settings
-│   ├── style.css           # Full Macchiato color scheme
-│   └── scripts/            # Helper scripts (auto-chmod'd on install)
-├── tools/
-│   ├── wireguard.sh        # VPN toggle
-│   ├── youtube-dl.sh       # Video downloader
-│   ├── cleaner.sh          # System cleanup
-│   ├── app-killer.sh       # Force-kill processes
-│   ├── scan-malware.sh     # Malware/rootkit scan
-│   ├── spoof-mac.sh        # MAC address randomizer
-│   └── install-deps.sh     # Dependency installer
+│   ├── config                    # Module layout & settings
+│   ├── style.css                 # Full Macchiato color scheme
+│   └── scripts/                  # All scripts (auto-chmod'd on install)
+│       ├── wg-manager.sh         # WireGuard VPN manager
+│       ├── yt-dl.sh              # YouTube downloader
+│       ├── app-killer.sh         # Force-kill processes
+│       ├── clamav-scanner.sh     # Malware scanner
+│       ├── mac-spoofer.sh        # MAC address randomizer
+│       ├── metadata_cleaner.sh   # File metadata stripper
+│       ├── shredder.sh           # Secure file deletion
+│       ├── tor_firefox_rotator.sh# Tor identity rotator
+│       ├── spotify.sh            # Spotify launcher/control
+│       ├── window-info.sh        # Active window info
+│       └── setting.sh            # Omarchy settings launcher
 ├── chromium/
-│   └── manifest.json       # Browser skin for Chromium/Chrome
+│   └── manifest.json             # Browser skin for Chromium/Chrome
 └── assets/
-    ├── preview-desktop.png # Full desktop screenshot
-    ├── preview-waybar.png  # Waybar close-up
-    └── preview-tools.png   # Tools launcher screenshot
+    ├── preview-desktop.png       # Full desktop screenshot
+    ├── preview-waybar.png        # Waybar close-up
+    └── preview-tools.png         # Tools launcher screenshot
 ```
 
 ---

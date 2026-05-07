@@ -59,22 +59,21 @@
 | `tor_firefox_rotator.sh` | 🧅 Tor Identity Rotation |
 
 ---
-
 ## 🖼️ Wallpaper Collection
 
-Matching high-resolution backgrounds curated for the Macchiato palette.
+A curated selection of high-resolution backgrounds optimized for the Macchiato color palette.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5de89ea4-719b-4770-8b1b-b999eb72a938" width="24%" />
-  <img src="https://github.com/user-attachments/assets/b5c67c04-17b4-4470-8b1b-b999eb72a938" width="24%" />
-  <img src="https://github.com/user-attachments/assets/27303e7e-a8f9-4aaf-adbe-a4eeccde0b02" width="24%" />
-  <img src="https://github.com/user-attachments/assets/3a9355d4-61ea-4d36-b03d-67f95ba61244" width="24%" />
+  <img src="https://github.com/user-attachments/assets/a3dbe5c7-c55d-45d7-8b26-70291c8cc158" width="24%" />
+  <img src="https://github.com/user-attachments/assets/0159bd89-e88f-4e21-bb88-31c188955b6b" width="24%" />
+  <img src="https://github.com/user-attachments/assets/166b620a-1c60-40be-91f1-4a49513fd3ae" width="24%" />
+  <img src="https://github.com/user-attachments/assets/9e80dfa6-b214-44fb-84df-da9b7d6f12ea" width="24%" />
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b9d80834-372b-45b4-b93f-77edf046b935" width="24%" />
-  <img src="https://github.com/user-attachments/assets/c7549269-ab9b-4bf2-994b-2a075084c30c" width="24%" />
-  <img src="https://github.com/user-attachments/assets/d7383955-4796-4e67-8d15-d0f4795d9113" width="24%" />
-  <img src="https://github.com/user-attachments/assets/83f8eb46-2cce-4322-898f-28d0dc679107" width="24%" />
+  <img src="https://github.com/user-attachments/assets/f555f4b5-d4a9-4556-9108-acb639655577" width="24%" />
+  <img src="https://github.com/user-attachments/assets/e13069d6-cbc4-43b8-ae6f-a27a02fd1008" width="24%" />
+  <img src="https://github.com/user-attachments/assets/c06b9fcb-ee44-4c5d-bb26-be16bb96007a" width="24%" />
+  <img src="https://github.com/user-attachments/assets/2037ad80-af4f-4f5a-9cec-c6c15d4eda45" width="24%" />
 </p>
 
 ---

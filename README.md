@@ -161,17 +161,6 @@ omarchy-macchiato-core-theme/
 
 ---
 
-## 🔧 Requirements
-
-| Dependency | Purpose |
-|---|---|
-| [Omarchy](https://omarchy.dev) | Base system (required) |
-| [Waybar](https://github.com/Alexays/Waybar) | Status bar |
-| [Hyprland](https://hyprland.org) | Compositor |
-| JetBrainsMono Nerd Font | Typography |
-| Chromium / Chrome *(optional)* | Browser theming |
-
----
 
 ## 🤝 Contributing
 

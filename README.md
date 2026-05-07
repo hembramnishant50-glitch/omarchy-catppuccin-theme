@@ -11,13 +11,10 @@
 [![WM: Hyprland](https://img.shields.io/badge/WM-Hyprland-cad3f5?style=flat-square)](https://hyprland.org)
 [![Bar: Waybar](https://img.shields.io/badge/Bar-Waybar-cad3f5?style=flat-square)](https://github.com/Alexays/Waybar)
 
-<img src="https://raw.githubusercontent.com/hembramnishant50-glitch/omarchy-macchiato-core-theme/main/assets/preview-desktop.png" alt="Omarchy Macchiato Core — Desktop" width="800"/>
-
-<br/>
-
-| Waybar | Tools Launcher |
-|:---:|:---:|
-| ![Waybar](https://raw.githubusercontent.com/hembramnishant50-glitch/omarchy-macchiato-core-theme/main/assets/preview-waybar.png) | ![Tools](https://raw.githubusercontent.com/hembramnishant50-glitch/omarchy-macchiato-core-theme/main/assets/preview-tools.png) |
+<img src="https://github.com/user-attachments/assets/9b2c57c7-2f93-46e3-a11b-d5ae2584e0bd" alt="Omarchy Macchiato Core — Desktop 1" width="800"/>
+<img src="https://github.com/user-attachments/assets/d251947f-19d0-4250-9b22-52e82d997fce" alt="Omarchy Macchiato Core — Desktop 2" width="800"/>
+<img src="https://github.com/user-attachments/assets/3b426c85-6441-429b-aa31-f9cb4d8587c8" alt="Omarchy Macchiato Core — Desktop 3" width="800"/>
+<img src="https://github.com/user-attachments/assets/ba641a85-1219-4741-9ea4-b7bc1a3d123c" alt="Omarchy Macchiato Core — Desktop 4" width="800"/>
 
 </div>
 
@@ -70,11 +67,33 @@ The theme ships **12 ready-to-use scripts** inside `~/.config/waybar/scripts/`, 
 | `spotify.sh` | 🎵 Spotify — launch or control Spotify playback |
 | `window-info.sh` | 🪟 Window Info — display active window class & title |
 | `setting.sh` | ⚙️ Settings — open the Omarchy settings launcher |
-
+| `setting (Copy).sh` | ⚙️ Settings (backup copy) |
 
 ---
 
-## 🎨 Color Palette
+## 📊 Waybar Showcase
+
+### Current — Default Waybar
+
+<img src="https://github.com/user-attachments/assets/99253cf4-1465-441e-89bb-b5524d967056" alt="Default Waybar" width="800"/>
+
+Clean, edge-to-edge bar with `#c29df2` Lavender underline. Workspace pills on the left, clock centered, system tray on the right.
+
+---
+
+### 🚧 Upcoming Waybar Variants
+
+> New Waybar styles are in active development. Screenshots will appear here on release.
+
+| Variant | Status | Preview |
+|---------|--------|---------|
+| Default (current) | ✅ Stable | ↑ above |
+| Variant 2 | 🔨 In Progress | *Coming soon* |
+| Variant 3 | 📋 Planned | *Coming soon* |
+
+*Want to contribute a Waybar variant? Open a PR — see [Contributing](#-contributing).*
+
+---
 
 | Role | Hex | Preview | Description |
 |------|-----|---------|-------------|
@@ -101,13 +120,6 @@ omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-macchia
 If you want to apply the Waybar config manually, the script below safely backs up your existing config and applies the new one:
 
 ```bash
-#!/usr/bin/env bash
-
-# Step 0 — Install Rofi (Wayland) and Required Fonts
-echo "󰒲 Installing Rofi and font dependencies..."
-sudo pacman -S --needed rofi-wayland ttf-jetbrains-mono-nerd otf-font-awesome
-# These are required for the gear icon, calendar grid, and menu rendering.
-
 # Step 1 — Back up your existing Waybar config
 if [ -d ~/.config/waybar ]; then
     BACKUP_NAME="waybar-backup-$(date +%d-%m-%Y)-$RANDOM"
@@ -121,11 +133,7 @@ SOURCE_DIR="$HOME/.config/omarchy/current/theme/waybar"
 if [ -d "$SOURCE_DIR" ]; then
     mkdir -p ~/.config/waybar
     cp -r "$SOURCE_DIR"/* ~/.config/waybar/
-    
-    # Ensure scripts are executable, especially setting.sh and ocr-snapper.sh
-    if [ -d ~/.config/waybar/scripts ]; then
-        chmod +x ~/.config/waybar/scripts/*
-    fi
+    [ -d ~/.config/waybar/scripts ] && chmod +x ~/.config/waybar/scripts/*
     echo "✔ Waybar configuration applied successfully."
 else
     echo "✖ Error: Source directory $SOURCE_DIR not found."

@@ -93,6 +93,13 @@ omarchy-theme-install https://github.com/hembramnishant50-glitch/omarchy-macchia
 If you want to apply the Waybar config manually, the script below safely backs up your existing config and applies the new one:
 
 ```bash
+#!/usr/bin/env bash
+
+# Step 0 — Install Rofi (Wayland) and Required Fonts
+echo "󰒲 Installing Rofi and font dependencies..."
+sudo pacman -S --needed rofi-wayland ttf-jetbrains-mono-nerd otf-font-awesome
+# These are required for the gear icon, calendar grid, and menu rendering.
+
 # Step 1 — Back up your existing Waybar config
 if [ -d ~/.config/waybar ]; then
     BACKUP_NAME="waybar-backup-$(date +%d-%m-%Y)-$RANDOM"
@@ -106,7 +113,11 @@ SOURCE_DIR="$HOME/.config/omarchy/current/theme/waybar"
 if [ -d "$SOURCE_DIR" ]; then
     mkdir -p ~/.config/waybar
     cp -r "$SOURCE_DIR"/* ~/.config/waybar/
-    [ -d ~/.config/waybar/scripts ] && chmod +x ~/.config/waybar/scripts/*
+    
+    # Ensure scripts are executable, especially setting.sh and ocr-snapper.sh
+    if [ -d ~/.config/waybar/scripts ]; then
+        chmod +x ~/.config/waybar/scripts/*
+    fi
     echo "✔ Waybar configuration applied successfully."
 else
     echo "✖ Error: Source directory $SOURCE_DIR not found."

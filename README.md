@@ -4,17 +4,21 @@
 
 # ☕ Omarchy Macchiato Core
 
-**A solid-state, zero-blur Catppuccin Macchiato theme for [Omarchy](https://omarchy.org/)**
+**A high-performance, solid-state Catppuccin theme for [Omarchy](https://omarchy.dev)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-c29df2?style=flat-square)](LICENSE)
 [![Theme: Macchiato](https://img.shields.io/badge/Catppuccin-Macchiato-be9aee?style=flat-square)](https://github.com/catppuccin/catppuccin)
 [![WM: Hyprland](https://img.shields.io/badge/WM-Hyprland-cad3f5?style=flat-square)](https://hyprland.org)
-[![Bar: Waybar](https://img.shields.io/badge/Bar-Waybar-cad3f5?style=flat-square)](https://github.com/Alexays/Waybar)
 
-<img src="https://github.com/user-attachments/assets/9b2c57c7-2f93-46e3-a11b-d5ae2584e0bd" alt="Omarchy Macchiato Core — Desktop 1" width="800"/>
-<img src="https://github.com/user-attachments/assets/d251947f-19d0-4250-9b22-52e82d997fce" alt="Omarchy Macchiato Core — Desktop 2" width="800"/>
-<img src="https://github.com/user-attachments/assets/3b426c85-6441-429b-aa31-f9cb4d8587c8" alt="Omarchy Macchiato Core — Desktop 3" width="800"/>
-<img src="https://github.com/user-attachments/assets/ba641a85-1219-4741-9ea4-b7bc1a3d123c" alt="Omarchy Macchiato Core — Desktop 4" width="800"/>
+<!-- Small UI Desktop Grid -->
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9b2c57c7-2f93-46e3-a11b-d5ae2584e0bd" width="48%" />
+  <img src="https://github.com/user-attachments/assets/d251947f-19d0-4250-9b22-52e82d997fce" width="48%" />
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3b426c85-6441-429b-aa31-f9cb4d8587c8" width="48%" />
+  <img src="https://github.com/user-attachments/assets/ba641a85-1219-4741-9ea4-b7bc1a3d123c" width="48%" />
+</p>
 
 </div>
 
@@ -22,86 +26,56 @@
 
 ## 🧠 Philosophy
 
-Most themes chase glass effects and transparency. **Macchiato Core** goes the opposite direction.
+**Macchiato Core** eliminates the performance tax of modern desktops. By using **pure, solid hex colors** with zero blur and zero transparency, it removes compositor lag and GPU overhead. The result is a sharp, high-contrast workspace that feels instantaneous on any hardware.
 
-Every surface is a **pure, solid hex color** — no blur, no transparency, no compositor gimmicks eating your GPU. The result is a distraction-free desktop that renders perfectly at any hardware tier, from a decade-old ThinkPad to a brand-new workstation.
+---
 
-**Core** refers to the stripped-back, purposeful design: everything present has a reason, nothing is decorative noise.
+## 📊 Waybar Variants
+
+### 1. Default Core Bar
+*Full-width with a signature Lavender (`#c29df2`) underline and high-contrast workspace pills.*
+<img src="https://github.com/user-attachments/assets/99253cf4-1465-441e-89bb-b5524d967056" width="100%" alt="Default Waybar" />
+
+### 2. Modern Floating Bar
+*A detached, minimalist pill-style layout with grouped system modules.*
+<img src="https://github.com/user-attachments/assets/2c9823b8-e97f-4ba4-9af6-4362b875716e" width="100%" alt="2nd Waybar" />
 
 ---
 
 ## ✨ Features
 
-### 🪟 Solid State UI
-Pure hex colors throughout. No transparency. No blur. Every pixel is intentional — delivering a high-contrast, distraction-free workspace that looks equally sharp on a 1080p display or a 4K monitor.
+- **Solid State UI:** No transparency. No blur. Perfect pixel-clarity.
+- **Chromium Skin:** Custom `manifest.json` included to match your browser to the system.
+- **Typography:** Optimized for **JetBrainsMono Nerd Font**.
+- **12 Integrated Scripts:** Pre-configured tools inside `~/.config/waybar/scripts/`.
 
-### 📊 The Core Waybar
-A fully hand-tuned Waybar config built from the ground up:
-
-- **Edge-to-edge 2px downside border** in `#c29df2` Lavender with an inset neon underglow trick that bypasses compositor clipping
-- **Left:** workspace indicators (`1 2 3 4`) + active app name — the active workspace pill renders in solid Mauve `#be9aee`
-- **Center:** clean clock display in `#cad3f5`
-- **Right:** network, Bluetooth, volume, screen, and battery modules — all consistently spaced at 16px
-- **Custom charging states** with a dedicated `#39515A` battery indicator color
-- **Fixed empty workspace rendering** — workspaces render correctly at all times, even when empty
-
-### 🌐 Seamless Browser Integration
-Includes a custom Chromium `manifest.json` that skins your browser to match the system's exact hex codes. The web and the desktop finally look like one environment.
-
-### 🔤 Typography
-Clean, bold configuration for **JetBrainsMono Nerd Font** — crisp at small sizes, iconic at large ones.
-
-### 🧰 Built-in Scripts
-The theme ships **12 ready-to-use scripts** inside `~/.config/waybar/scripts/`, all auto-made executable on install. Accessible via the themed, searchable launcher:
-
-| Script | Description |
-|--------|-------------|
-| `wg-manager.sh` | 🔐 WireGuard VPN — connect, disconnect & status toggle |
-| `yt-dl.sh` | 🎬 YouTube DL — download videos/audio from the terminal |
-| `app-killer.sh` | 🗡️ App Killer — force-kill any running process by name |
-| `clamav-scanner.sh` | 🛡️ ClamAV Scanner — full malware scan via ClamAV |
-| `mac-spoofer.sh` | 🌐 MAC Spoofer — randomize your MAC address instantly |
-| `metadata_cleaner.sh` | 🧹 Metadata Cleaner — strip EXIF & metadata from files |
-| `shredder.sh` | 🔥 Shredder — securely wipe files beyond recovery |
-| `tor_firefox_rotator.sh` | 🧅 Tor + Firefox — rotate Tor identity & launch Firefox |
-| `spotify.sh` | 🎵 Spotify — launch or control Spotify playback |
-| `window-info.sh` | 🪟 Window Info — display active window class & title |
-| `setting.sh` | ⚙️ Settings — open the Omarchy settings launcher |
-| `setting (Copy).sh` | ⚙️ Settings (backup copy) |
+| Script | Function |
+|:---|:---|
+| `wg-manager.sh` | 🔐 WireGuard VPN Toggle |
+| `yt-dl.sh` | 🎬 YouTube Media Downloader |
+| `app-killer.sh` | 🗡️ Process Force-Kill Tool |
+| `mac-spoofer.sh` | 🌐 Instant MAC Randomization |
+| `shredder.sh` | 🔥 Secure File Destruction |
+| `tor_firefox_rotator.sh` | 🧅 Tor Identity Rotation |
 
 ---
 
-## 📊 Waybar Showcase
+## 🖼️ Wallpaper Collection
 
-### Current — Default Waybar
+Matching high-resolution backgrounds curated for the Macchiato palette.
 
-<img src="https://github.com/user-attachments/assets/99253cf4-1465-441e-89bb-b5524d967056" alt="Default Waybar" width="800"/>
-
-Clean, edge-to-edge bar with `#c29df2` Lavender underline. Workspace pills on the left, clock centered, system tray on the right.
-
----
-
-### 🚧 Upcoming Waybar Variants
-
-> New Waybar styles are in active development. Screenshots will appear here on release.
-
-| Variant | Status | Preview |
-|---------|--------|---------|
-| Default (current) | ✅ Stable | ↑ above |
-| Variant 2 | 🔨 In Progress | *Coming soon* |
-| Variant 3 | 📋 Planned | *Coming soon* |
-
-*Want to contribute a Waybar variant? Open a PR — see [Contributing](#-contributing).*
-
----
-
-| Role | Hex | Preview | Description |
-|------|-----|---------|-------------|
-| Base / Background | `#1e2030` | ![#1e2030](https://placehold.co/16x16/1e2030/1e2030.png) | Deep, solid Macchiato background |
-| Foreground / Text | `#cad3f5` | ![#cad3f5](https://placehold.co/16x16/cad3f5/cad3f5.png) | Crisp, readable text and icons |
-| Border / Glow | `#c29df2` | ![#c29df2](https://placehold.co/16x16/c29df2/c29df2.png) | Signature Lavender downside border |
-| Active Accent | `#be9aee` | ![#be9aee](https://placehold.co/16x16/be9aee/be9aee.png) | Mauve — active workspaces & tooltips |
-| Battery Indicator | `#39515A` | ![#39515A](https://placehold.co/16x16/39515A/39515A.png) | Custom charging state color |
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5de89ea4-719b-4770-8b1b-b999eb72a938" width="24%" />
+  <img src="https://github.com/user-attachments/assets/b5c67c04-17b4-4470-8b1b-b999eb72a938" width="24%" />
+  <img src="https://github.com/user-attachments/assets/27303e7e-a8f9-4aaf-adbe-a4eeccde0b02" width="24%" />
+  <img src="https://github.com/user-attachments/assets/3a9355d4-61ea-4d36-b03d-67f95ba61244" width="24%" />
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b9d80834-372b-45b4-b93f-77edf046b935" width="24%" />
+  <img src="https://github.com/user-attachments/assets/c7549269-ab9b-4bf2-994b-2a075084c30c" width="24%" />
+  <img src="https://github.com/user-attachments/assets/d7383955-4796-4e67-8d15-d0f4795d9113" width="24%" />
+  <img src="https://github.com/user-attachments/assets/83f8eb46-2cce-4322-898f-28d0dc679107" width="24%" />
+</p>
 
 ---
 

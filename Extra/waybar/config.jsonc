@@ -1,0 +1,201 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "height": 38,
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "fixed-center": true,
+
+    "modules-center": ["group/main-pill"],
+
+    "group/main-pill": {
+        "orientation": "horizontal",
+        "modules": [
+            "clock",
+            "hyprland/window",
+            "hyprland/workspaces",
+            "pulseaudio",
+            "network",
+            "custom/antivirus",
+            "battery"
+        ]
+    },
+
+    "clock": {
+        "format": "<b>{:%I:%M %p}</b>",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "month",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#be9aef'><b>{}</b></span>",
+                "days": "<span color='#cad3f5'><b>{}</b></span>",
+                "weeks": "<span color='#5b6078'><b>W{}</b></span>",
+                "weekdays": "<span color='#eed49f'><b>{}</b></span>",
+                "today": "<span color='#be9aef'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+
+    "hyprland/window": {
+        "format": "{class}", 
+        "max-length": 35,
+        "separate-outputs": true,
+        "rewrite": {
+            // --- Defaults & Omarchy ---
+            "": "󱄅 Omarchy",
+            "waybar": "󱑆 Waybar",
+            "walker": "󰀻 Walker",
+            "org.omarchy.terminal": " Terminal",
+            "omarchy-launch-wifi": "󰖩 WiFi",
+            "org.omarchy.impala": "󰖩 Wi-Fi",
+            "omarchy-launch-audio": "󰓃 Audio",
+            "org.omarchy.wiremix": "󰓃 Audio",
+
+            
+
+            // --- Google Suite ---
+            "google-chrome": " Chrome",
+            "google-gmail": "󰊫 Gmail",
+            "chrome-mail.google.com__mail_u_0_-Default": "󰊫 Gmail",
+            "google-drive": "󰝰 Drive",
+            "google-calendar": "󰸗 Calendar",
+            "google-keep": "󰟶 Keep",
+            "google-maps": "󰉙 Maps",
+            "google-docs": "󰈙 Docs",
+            "google-sheets": "󰈛 Sheets",
+            "google-slides": "󰈧 Slides",
+            "google-meet": "󰻵 Meet",
+            "google-photos": "󰄄 Photos",
+            "chrome-photos.google.com__-Default": "󰄄 Photos",
+            "google-youtube": "󰗃 YouTube",
+            "chrome-mail.google.com__-default": "󰊭 Gmail",
+            "chrome-drive.google.com__-default": "󰝰 Drive",
+            "chrome-keep.google.com__-default": "󰟶 Keep",
+            "chrome-youtube.com__-default": "󰗃 YouTube",
+            "chrome-notebooklm.google.com__-default": "󰠮 NotebookLM",
+
+            // --- Proton Services ---
+            "chrome-mail.proton.me__-default": "󰇮 Proton Mail",
+            "chrome-calendar.proton.me__-default": "󰸗 Proton Calendar",
+            "chrome-drive.proton.me__-default": "󰝰 Proton Drive",
+            "chrome-pass.proton.me__-default": "󰷖 Proton Pass",
+            "chrome-lumo.proton.me__-default": "󱔐 Lumo AI",
+
+            // --- Flathub / Student / Research ---
+            "io.github.kolunmi.Bazaar": "󰀻 Bazaar",
+            "md.obsidian.Obsidian": "󱓧 Obsidian",
+            "obsidian": "󱓧 Obsidian",
+            "net.ankiweb.Anki": "󰮔 Anki",
+            "org.zotero.Zotero": "󱓷 Zotero",
+            "org.libreoffice.LibreOffice": "󰏆 LibreOffice",
+            "com.github.xournalpp.xournalpp": "󱞈 Xournal++",
+            "com.github.johnfactotum.Foliate": "󰂵 Foliate",
+
+            // --- Browsers & Web ---
+            "org.mozilla.firefox": " Firefox",
+            "firefox": " Firefox",
+            "io.github.zen_browser.zen": "󰈹 Zen",
+            "com.brave.Browser": " Brave",
+            "brave-browser": " Brave",
+            "librewolf": "󰈹 LibreWolf",
+            "vivaldi": " Vivaldi",
+
+            // --- Dev & Terminals ---
+            "ghostty": " Ghostty",
+            "kitty": " Kitty",
+            "alacritty": " Alacritty",
+            "com.visualstudio.code": "󰨞 VS Code",
+            "code": "󰨞 VS Code",
+            "nvim": " Neovim",
+            "vim": " Vim",
+
+            // --- Media & Social ---
+            "org.videolan.VLC": "󰕼 VLC",
+            "vlc": "󰕼 VLC",
+            "spotify": " Spotify",
+            "com.discordapp.Discord": " Discord",
+            "discord": " Discord",
+            "org.telegram.desktop": " Telegram",
+            "com.ayugram.desktop": " AyuGram",
+            "whatsapp": " WhatsApp",
+            "reddit": " Reddit",
+            "chrome-www.reddit.com__-Default": "󰑍 Reddit",
+            "chrome-x.com__compose_post-Default": "󰮑 X Compose",
+
+             // --- AI ---
+            "chatgpt": "󰚩 ChatGPT",
+            "gemini": "Gemini AI",
+            "chrome-gemini.google.com__app-Default": "Gemini AI",
+
+            "claude": " Claude AI",
+            "perplexity": "󰚩 Perplexity",
+
+            // --- Extra ---
+            "chrome-web.careerwill.com__-Default": "󱓷 Careerwill",
+            "com.rafaelmardojai.Blanket": "󱠡 Blanket",
+
+
+            // --- Utilities & Download Managers ---
+            "com.abdownloadmanager.abdownloadmanager": "󰇚 AB Manager",
+            "abdownloadmanager": "󰇚 AB Manager",
+            "Com-abdownloadmanager-desktop-appkt": "󰇚 AB Manager",
+            "qbittorrent": "󱑢 qBittorrent",
+            "com.bitwarden.desktop": "󰞀 Bitwarden",
+            "bitwarden": "󰞀 Bitwarden",
+            "thunar": " Thunar",
+            "org.gnome.Nautilus": " Files",
+            "org.gnome.clocks": "󱎫 Clocks",
+            "org.omarchy.lazydocker": "󰡨 Lazydocker",
+            "gnome-control-center": "⚙️ Settings",
+            
+            "pavucontrol": "󰓃 Audio"
+        }
+    },
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "all-outputs": true,
+        "sort-by-number": true,
+        "persistent-workspaces": {
+            "*": 3
+        }
+    },
+
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": "󰝟",
+        "format-icons": { "default": ["󰕿", "󰖀", "󰕾"] },
+        "on-click": "omarchy-launch-audio"
+    },
+
+    "network": {
+        "format-wifi": " ",
+        "format-disconnected": "󰖪 ",
+        "on-click": "omarchy-launch-wifi",
+        "tooltip-format": "{essid}"
+    },
+
+    "custom/antivirus": {
+        "exec": "if systemctl is-active --quiet clamonacc.service; then echo '󰕥'; else echo ''; fi",
+        "interval": 5,
+        "format": "{}",
+        "tooltip-format": "ClamAV Defender Active"
+    },
+
+    "battery": {
+        "states": { "warning": 30, "critical": 15 },
+        "format": "{icon}",
+        "format-icons": [" ", " ", " ", " ", " "],
+        "on-click": "omarchy-menu power",
+        "tooltip-format": "{capacity}%"
+    }
+}

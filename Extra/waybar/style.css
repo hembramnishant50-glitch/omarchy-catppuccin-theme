@@ -1,0 +1,76 @@
+/* --- Omarchy Macchiato: Final Integrated Edition --- */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", Bold;
+    font-size: 13px;
+    border: none;
+    min-height: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+window#waybar {
+    background: transparent;
+}
+
+#main-pill {
+    background-color: #1e2030;
+    border: 2px solid #be9aef; 
+    border-radius: 30px;
+    padding: 1px 12px;
+    margin: 2px 0;
+}
+
+/* WORKSPACES */
+#workspaces button {
+    color: #cad3f5;
+    padding: 0 8px;
+    margin: 2px 2px;
+}
+
+#workspaces button.active {
+    background-color: #be9aef; 
+    color: #1e2030;
+    border-radius: 12px;
+}
+
+/* MODULES GENERAL */
+#clock, #window, #pulseaudio, #network, #battery, #custom-antivirus {
+    padding: 0 10px;
+    color: #cad3f5;
+}
+
+/* DEFENDER COLOR */
+#custom-antivirus {
+    color: #cad3f5; 
+    font-size: 15px;
+}
+
+/* BATTERY COLORS */
+#battery {
+    color: #cad3f5; /* Your Healthy Green */
+}
+
+#battery.charging {
+    color: #cad3f5; /* Your Charging Orange */
+}
+
+/* LOGIC COLORS */
+#pulseaudio.muted, #network.disconnected { color: #ed8796; }
+
+/* HOVER EFFECT */
+#clock:hover, #window:hover, #pulseaudio:hover, #network:hover, #battery:hover, #custom-antivirus:hover {
+    background: rgba(190, 154, 239, 0.1); 
+    border-radius: 15px;
+}
+
+/* TOOLTIPS & CALENDAR */
+tooltip {
+    background: #1e2030;
+    border: 2px solid #be9aef;
+    border-radius: 7px;
+}
+
+tooltip label {
+    padding: 10px;
+    color: #cad3f5;
+}

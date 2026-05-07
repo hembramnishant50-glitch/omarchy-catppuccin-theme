@@ -1,0 +1,113 @@
+/* --- Color Definitions --- */
+@define-color base      #1e2030;
+@define-color border_col #c19cf2; /* Primary Lavender Theme[cite: 11] */
+@define-color text      #cdd6f4;
+@define-color subtext   #a6adc8; /* Preserved Window Info Color[cite: 11] */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "omarchy", sans-serif;
+    font-size: 13px;
+    border: none;
+    text-shadow: none; /* Strictly no glow on any module[cite: 11] */
+}
+
+window#waybar {
+    background-color: @base;
+    border: 2px solid @border_col;
+    border-radius: 12px;
+    color: @text;
+    margin: 8px 10px 0 10px; /* Layout from config.jsonc[cite: 3, 11] */
+}
+#workspaces button:hover {
+    background: rgba(137, 180, 250, 0.15);
+    color: #c19cf2;
+}
+/* --- Left Modules --- */
+#custom-omarchy {
+    color: @border_col;
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+#workspaces button {
+    color: @subtext;
+    padding: 0 8px;
+    margin: 4px 2px;
+    border-radius: 8px;
+}
+
+#workspaces button.active {
+    background-color: @border_col;
+    color: @base;
+    font-weight: bold;
+}
+
+/* WINDOW INFO - Original subtext color strictly preserved[cite: 10, 11] */
+#custom-window-info {
+    color: @subtext;
+    padding: 0 10px;
+    font-style: italic;
+}
+
+#custom-spotify {
+    color: @border_col;
+    padding: 0 12px;
+}
+
+#custom-spotify.paused {
+    color: @subtext;
+}
+
+/* --- Unified Theme (Icons & Text)[cite: 5, 10, 11] --- */
+#clock,
+#custom-setting, /* Moved to Right side per config[cite: 7] */
+#custom-update,
+#custom-voxtype,
+#custom-screenrecording-indicator,
+#custom-idle-indicator,
+#custom-notification-silencing-indicator,
+#bluetooth,
+#network,
+#pulseaudio,
+#cpu,
+#custom-expand-icon {
+    color: @border_col;
+    padding: 0 10px;
+}
+
+#clock {
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+/* --- Industrial Underline Battery Style[cite: 4] --- */
+#battery {
+    padding: 0 12px;
+    margin: 0 2px;
+    color: @border_col; /* Icon remains Lavender[cite: 11] */
+    border-bottom: 3px solid alpha(@border_col, 0.2);
+    transition: all 0.3s ease;
+}
+
+#battery.discharging {
+    border-bottom: 3px 
+}
+
+#battery.charging, 
+#battery.plugged {
+    border-bottom: 3px 
+}
+
+
+/* --- Tooltip & Calendar Grid Formatting[cite: 3, 4, 11] --- */
+tooltip {
+    background: @base;
+    border: 2px solid @border_col;
+    border-radius: 12px;
+}
+
+tooltip label { 
+    color: @text; 
+    padding: 10px;
+    font-family: "JetBrainsMono Nerd Font"; /* Ensures calendar numbers line up[cite: 4, 11] */
+}

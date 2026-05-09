@@ -140,7 +140,7 @@ echo "✔ Waybar restarted."
 
 <br>
 
-<img width="85%" alt="Hyprlock Preview" src="https://github.com/user-attachments/assets/YOUR-NEW-IMAGE-LINK-HERE" />
+<img width="85%" alt="Hyprlock Preview" src="https://github.com/user-attachments/assets/e0bcab31-f896-4fc7-afbd-818a18dd6752" />
 
 <p align="center">
   <i>Glassmorphism lock screen featuring a live clock, personalized profile greeting, active media controls with visualizers, and quick power options.</i>

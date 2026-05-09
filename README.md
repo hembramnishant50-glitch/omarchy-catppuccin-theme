@@ -65,32 +65,21 @@
 ---
 ## 🖼️ Wallpaper Collection
 
-A curated selection of high-resolution backgrounds optimized for the Macchiato color palette and dark-themed setups.
+A curated selection of high-resolution backgrounds optimized for the Macchiato color palette.
 
 <p align="center">
-  <img src="[https://github.com/user-attachments/assets/a3dbe5c7-c55d-45d7-8b26-70291c8cc158](https://github.com/user-attachments/assets/a3dbe5c7-c55d-45d7-8b26-70291c8cc158)" width="24%" />
-  <img src="[https://github.com/user-attachments/assets/0159bd89-e88f-4e21-bb88-31c188955b6b](https://github.com/user-attachments/assets/0159bd89-e88f-4e21-bb88-31c188955b6b)" width="24%" />
-  <img src="[https://github.com/user-attachments/assets/166b620a-1c60-40be-91f1-4a49513fd3ae](https://github.com/user-attachments/assets/166b620a-1c60-40be-91f1-4a49513fd3ae)" width="24%" />
-  <img src="[https://github.com/user-attachments/assets/9e80dfa6-b214-44fb-84df-da9b7d6f12ea](https://github.com/user-attachments/assets/9e80dfa6-b214-44fb-84df-da9b7d6f12ea)" width="24%" />
+  <img src="https://github.com/user-attachments/assets/e402f7cb-4cab-4453-ac31-9d769c705983" width="24%" />
+  <img src="https://github.com/user-attachments/assets/fcc85c03-9061-4462-b066-a2a067615506" width="24%" />
+  <img src="https://github.com/user-attachments/assets/6f2c1b15-2aa5-4e92-9035-7948bf494a68" width="24%" />
+  <img src="https://github.com/user-attachments/assets/62efbebb-ca9a-4a01-b7c6-d325e8cf6959" width="24%" />
 </p>
 <p align="center">
-  <img src="[https://github.com/user-attachments/assets/f555f4b5-d4a9-4556-9108-acb639655577](https://github.com/user-attachments/assets/f555f4b5-d4a9-4556-9108-acb639655577)" width="24%" />
-  <img src="[https://github.com/user-attachments/assets/e13069d6-cbc4-43b8-ae6f-a27a02ff1008](https://github.com/user-attachments/assets/e13069d6-cbc4-43b8-ae6f-a27a02ff1008)" width="24%" />
-  <img src="[https://github.com/user-attachments/assets/c06b9fcb-ee44-4c5d-bb26-be16bb96007a](https://github.com/user-attachments/assets/c06b9fcb-ee44-4c5d-bb26-be16bb96007a)" width="24%" />
-  <img src="[https://github.com/user-attachments/assets/e0bcab31-f896-4fc7-afbd-818a18dd6752](https://github.com/user-attachments/assets/e0bcab31-f896-4fc7-afbd-818a18dd6752)" width="24%" />
+  <img src="https://github.com/user-attachments/assets/10f33015-a08a-4267-a42d-eee056e8663d" width="24%" />
+  <img src="https://github.com/user-attachments/assets/92ec24f1-6841-4caf-9700-38ae415ef14e" width="24%" />
+  <img src="https://github.com/user-attachments/assets/ecd07836-10c4-4559-b9dd-ef0eedd5df92" width="24%" />
+  <img src="https://github.com/user-attachments/assets/6e636ca5-09fc-4114-ad03-113a6c17c027" width="24%" />
 </p>
-<p align="center">
-  <img src="[https://github.com/user-attachments/assets/e402f7cb-4cab-4453-ac31-9d769c705983](https://github.com/user-attachments/assets/e402f7cb-4cab-4453-ac31-9d769c705983)" width="24%" />
-  <img src="[https://github.com/user-attachments/assets/fcc85c03-9061-4462-b066-a2a067615506](https://github.com/user-attachments/assets/fcc85c03-9061-4462-b066-a2a067615506)" width="24%" />
-  <img src="[https://github.com/user-attachments/assets/6f2c1b15-2aa5-4e92-9035-7948bf494a68](https://github.com/user-attachments/assets/6f2c1b15-2aa5-4e92-9035-7948bf494a68)" width="24%" />
-  <img src="[https://github.com/user-attachments/assets/62efbebb-ca9a-4a01-b7c6-d325e8cf6959](https://github.com/user-attachments/assets/62efbebb-ca9a-4a01-b7c6-d325e8cf6959)" width="24%" />
-</p>
-<p align="center">
-  <img src="[https://github.com/user-attachments/assets/10f33015-a08a-4267-a42d-eee056e8663d](https://github.com/user-attachments/assets/10f33015-a08a-4267-a42d-eee056e8663d)" width="24%" />
-  <img src="[https://github.com/user-attachments/assets/92ec24f1-6841-4caf-9700-38ae415ef14e](https://github.com/user-attachments/assets/92ec24f1-6841-4caf-9700-38ae415ef14e)" width="24%" />
-  <img src="[https://github.com/user-attachments/assets/ecd07836-10c4-4559-b9dd-ef0eedd5df92](https://github.com/user-attachments/assets/ecd07836-10c4-4559-b9dd-ef0eedd5df92)" width="24%" />
-  <img src="[https://github.com/user-attachments/assets/6e636ca5-09fc-4114-ad03-113a6c17c027](https://github.com/user-attachments/assets/6e636ca5-09fc-4114-ad03-113a6c17c027)" width="24%" />
-</p>
+
 ---
 
 ## 📦 Installation

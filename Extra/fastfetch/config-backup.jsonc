@@ -1,0 +1,131 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "source": "/home/nishant/.config/fastfetch/sticker.png",
+    "width": 28,
+    "height": 12,
+    "padding": {
+      "top": 1,
+      "left": 2
+    }
+  },
+  "display": {
+    "separator": " ",
+    "color": "#cad3f5", // Text color (Text)
+    "key": {
+      "width": 18
+    }
+  },
+  "modules": [
+    "break",
+    {
+      "type": "title",
+      "format": " {user-name-colored}  {host-name-colored}",
+      "keyColor": "#c6a0f6" // Mauve
+    },
+    {
+      "type": "custom",
+      // Modern gradient divider
+      "format": "\u001b[38;2;237;135;150m━\u001b[38;2;245;169;127m━\u001b[38;2;238;212;159m━\u001b[38;2;166;218;149m━\u001b[38;2;139;213;202m━\u001b[38;2;138;173;244m━\u001b[38;2;198;160;246m━\u001b[38;2;245;189;230m━\u001b[38;2;237;135;150m━\u001b[38;2;245;169;127m━\u001b[38;2;238;212;159m━\u001b[38;2;166;218;149m━\u001b[38;2;139;213;202m━\u001b[38;2;138;173;244m━\u001b[38;2;198;160;246m━\u001b[38;2;245;189;230m━"
+    },
+    // --- HARDWARE SECTION ---
+    {
+      "type": "host",
+      "key": " 󰌢 System   ",
+      "keyColor": "#ed8796" // Red
+    },
+    {
+      "type": "cpu",
+      "key": " 󰻠 CPU      ",
+      "keyColor": "#f5a97f" // Peach
+    },
+    {
+      "type": "gpu",
+      "key": " 󰢮 GPU      ",
+      "keyColor": "#eed49f" // Yellow
+    },
+    {
+      "type": "display",
+      "key": " 󰹑 Resolution",
+      "keyColor": "#a6da95" // Green
+    },
+    {
+      "type": "memory",
+      "key": " 󰍛 Memory    ",
+      "keyColor": "#8bd5ca" // Teal
+    },
+    {
+      "type": "disk",
+      "key": " 󰋊 Storage   ",
+      "keyColor": "#91d7e3" // Sky
+    },
+    "break",
+    // --- SOFTWARE SECTION ---
+    {
+      "type": "command",
+      "key": " 󰣇 OS        ",
+      "keyColor": "#7dc4e4", // Sapphire
+      "text": "version=$(omarchy-version); echo \"Omarchy $version\""
+    },
+    {
+      "type": "command",
+      "key": " 󱓞 Branch    ",
+      "keyColor": "#8aadf4", // Blue
+      "text": "omarchy-version-branch"
+    },
+    {
+      "type": "kernel",
+      "key": " 󰒋 Kernel    ",
+      "keyColor": "#b7bdf8" // Lavender
+    },
+    {
+      "type": "wm",
+      "key": " 󱂬 WM        ",
+      "keyColor": "#c6a0f6" // Mauve
+    },
+    {
+      "type": "terminal",
+      "key": " 󰆍 Terminal  ",
+      "keyColor": "#f5bde6" // Pink
+    },
+    {
+      "type": "packages",
+      "key": " 󰏖 Packages  ",
+      "keyColor": "#f0c6c6" // Flamingo
+    },
+    {
+      "type": "command",
+      "key": " 󰏘 Theme     ",
+      "keyColor": "#f4dbd6", // Rosewater
+      "text": "omarchy-theme-current"
+    },
+    "break",
+    // --- STATUS SECTION ---
+    {
+      "type": "command",
+      "key": " 󰔛 Install Age",
+      "keyColor": "#ed8796", // Red
+      "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days"
+    },
+    {
+      "type": "uptime",
+      "key": " 󰅐 Uptime     ",
+      "keyColor": "#f5a97f" // Peach
+    },
+    {
+      "type": "command",
+      "key": " 󰚰 Updates    ",
+      "keyColor": "#eed49f", // Yellow
+      "text": "omarchy-version-pkgs"
+    },
+    "break",
+    {
+      "type": "colors",
+      "symbol": "rect", 
+      "block": {
+        "range": [1, 6]
+      }
+    }
+  ]
+}

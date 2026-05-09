@@ -23,13 +23,21 @@ window#waybar {
 /* WORKSPACES */
 #workspaces button {
     color: #cad3f5;
-    padding: 0 8px;
-    margin: 2px 2px;
+    padding: 0 4px; /* Shorter when inactive */
+    margin: 2px 4px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); /* Smooth snap effect */
 }
 
 #workspaces button.active {
     background-color: #be9aef; 
     color: #1e2030;
+    border-radius: 12px;
+    padding: 0 15px; /* Expands when active */
+    min-width: 30px;
+}
+
+#workspaces button:hover {
+    background: rgba(190, 154, 239, 0.2);
     border-radius: 12px;
 }
 

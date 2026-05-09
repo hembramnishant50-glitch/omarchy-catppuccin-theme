@@ -4,18 +4,6 @@
 * @version 0.2.0
 * @description Catppuccin Macchiato with custom purple accents.
 **/
-
-/* latte */
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css");
-/* frappe */
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-frappe.theme.css");
-/* macchiato */
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");
-/* mocha */
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
-
 /* You can also append Catppuccin colors to customize the accent, e.g. */
 /* mocha (pink accent)*/
 @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha-pink.theme.css");
-/* frappe (maroon accent) */
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-frappe-maroon.theme.css");

@@ -77,7 +77,7 @@ A curated selection of high-resolution backgrounds optimized for the Macchiato c
   <img src="https://github.com/user-attachments/assets/f555f4b5-d4a9-4556-9108-acb639655577" width="24%" />
   <img src="https://github.com/user-attachments/assets/e13069d6-cbc4-43b8-ae6f-a27a02fd1008" width="24%" />
   <img src="https://github.com/user-attachments/assets/c06b9fcb-ee44-4c5d-bb26-be16bb96007a" width="24%" />
-  <img src="https://github.com/user-attachments/assets/2037ad80-af4f-4f5a-9cec-c6c15d4eda45" width="24%" />
+  <img src="https://github.com/user-attachments/assets/e0bcab31-f896-4fc7-afbd-818a18dd6752" width="24%" />
 </p>
 
 ---

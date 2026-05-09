@@ -134,19 +134,21 @@ echo "✔ Waybar restarted."
 ```
 
 ---
-## 🔒 Hyprlock — Custom Lock Screen
-
 <div align="center">
 
-<img width="1311" height="737" alt="Hyprlock Preview" src="https://github.com/user-attachments/assets/e0bcab31-f896-4fc7-afbd-818a18dd6752" />
+## <span style="color: #c19cf2;">🔒 Hyprlock</span> ✦ *Custom Lock Screen*
 
-*Glassmorphism lock screen with live clock, random quotes, and media controls*
+<br>
+
+<img width="85%" alt="Hyprlock Preview" src="https://github.com/user-attachments/assets/YOUR-NEW-IMAGE-LINK-HERE" />
+
+<p align="center">
+  <i>Glassmorphism lock screen featuring a live clock, personalized profile greeting, active media controls with visualizers, and quick power options.</i>
+</p>
 
 </div>
 
 <br>
-
-> ⚠️ **Run this after completing Option A or Option B above.**
 
 ```bash
 # 1. Install Playerctl (required for media key support)

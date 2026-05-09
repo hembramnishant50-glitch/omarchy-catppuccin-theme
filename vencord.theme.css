@@ -5,34 +5,17 @@
 * @description Catppuccin Macchiato with custom purple accents.
 **/
 
-:root {
-    /* Main Backgrounds */
-    --color00: #1e2030; /* Mantle - Darkest */
-    --color01: #1e2030; /* Base */
-    --color02: #24273a; /* Surface0 */
-    
-    /* Text & Foregrounds */
-    --color03: #5b6078; /* Surface2 */
-    --color04: #9399b2; /* Overlay0 */
-    --color05: #cad3f5; /* Text - Main */
-    --color06: #f4dbd6; /* Rosewater */
-    --color07: #b8c0e0; /* Subtext0 */
-    
-    /* Accents & Highlights */
-    --color08: #ed8796; /* Red */
-    --color09: #f5a97f; /* Orange */
-    --color10: #eed49f; /* Yellow */
-    --color11: #a6da95; /* Green */
-    --color12: #8bd5ca; /* Teal */
-    --color13: #be9aee; /* Your Custom Purple Accent */
-    --color14: #f5bde6; /* Pink */
-    --color15: #c29df2; /* Border Purple */
-}
+/* latte */
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css");
+/* frappe */
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-frappe.theme.css");
+/* macchiato */
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");
+/* mocha */
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
 
-/* Optional: Forced overrides for Vencord to ensure your purple pops */
-.theme-dark {
-    --accent-color: #be9aee;
-    --mention-foreground: #be9aee;
-    --mention-background: rgba(190, 154, 238, 0.1);
-    --text-link: #8aadf4;
-}
+/* You can also append Catppuccin colors to customize the accent, e.g. */
+/* mocha (pink accent)*/
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha-pink.theme.css");
+/* frappe (maroon accent) */
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-frappe-maroon.theme.css");

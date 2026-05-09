@@ -49,8 +49,6 @@
 ## ✨ Features
 
 - **Solid State UI:** No transparency. No blur. Perfect pixel-clarity.
-- **Chromium Skin:** Custom `manifest.json` included to match your browser to the system.
-- **Typography:** Optimized for **JetBrainsMono Nerd Font**.
 - **Integrated Scripts:** Pre-configured tools inside `~/.config/waybar/scripts/`.
 
 | Script | Function |

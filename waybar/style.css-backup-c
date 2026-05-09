@@ -1,0 +1,178 @@
+/* --- Catppuccin Macchiato Color Palette --- */
+@define-color base      #24273a;
+@define-color mantle    #1e2030;
+@define-color text      #cad3f5;
+@define-color subtext   #a6adc8;
+
+@define-color rosewater #f4dbd6;
+@define-color flamingo  #f0c6c6;
+@define-color pink      #f5bde6;
+@define-color mauve     #c6a0f6;
+@define-color red       #ed8796;
+@define-color maroon    #ee99a0;
+@define-color peach     #f5a97f;
+@define-color yellow    #eed49f;
+@define-color green     #a6da95;
+@define-color teal      #8bd5ca;
+@define-color sky       #91d7e3;
+@define-color sapphire  #7dc4e4;
+@define-color blue      #8aadf4;
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "omarchy", sans-serif;
+    font-size: 13px;
+    border: none;
+    text-shadow: none;
+}
+
+window#waybar {
+    background-color: @base;
+    border: 2px solid @mauve; /* Border using Mauve */
+    border-radius: 12px;
+    color: @text;
+    margin: 8px 10px 0 10px;
+}
+
+/* --- Left Modules --- */
+
+#custom-omarchy {
+    color: @mauve; /* Mauve Logo */
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+#workspaces button {
+    color: @subtext;           /* Inactive: Greyish */
+    padding: 0 8px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#workspaces button.active {
+    background-color: @mauve;  /* Active: Vibrant Purple */
+    color: @base;              /* Text: Dark Background color */
+    font-weight: bold;
+    min-width: 40px;           /* Makes the active one stand out */
+}
+
+#workspaces button.urgent {
+    background-color: @red;    /* Urgent: Bright Red */
+    color: @base;
+}
+
+#workspaces button:hover {
+    background: rgba(198, 160, 246, 0.2); /* Soft Mauve glow */
+    color: @mauve;
+}
+
+#custom-window-info {
+    color: @flamingo; /* Flamingo for Window Title */
+    padding: 0 10px;
+    font-style: italic;
+}
+
+#custom-spotify {
+    color: @green; /* Green for Spotify */
+    padding: 0 12px;
+}
+
+#custom-spotify.paused {
+    color: @subtext;
+}
+
+/* --- Center Modules --- */
+
+#clock {
+    color: @peach; /* Peach for Clock */
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+#custom-update {
+    color: @yellow; /* Yellow for Updates */
+}
+
+#custom-voxtype {
+    color: @maroon; /* Maroon for Voxtype */
+}
+
+#custom-screenrecording-indicator {
+    color: @red; /* Red for Recording */
+}
+
+#custom-idle-indicator {
+    color: @teal; /* Teal for Idle */
+}
+
+#custom-notification-silencing-indicator {
+    color: @sky; /* Sky for DND */
+}
+
+/* --- Right Modules --- */
+
+#custom-expand-icon {
+    color: @rosewater;
+    padding: 0 10px;
+}
+
+#custom-setting {
+    color: @rosewater; /* Rosewater for Settings */
+    padding: 0 10px;
+}
+
+#bluetooth {
+    color: @blue; /* Blue for Bluetooth */
+    padding: 0 10px;
+}
+
+#network {
+    color: @sapphire; /* Sapphire for Network */
+    padding: 0 10px;
+}
+
+#pulseaudio {
+    color: @pink; /* Pink for Audio */
+    padding: 0 10px;
+}
+
+#cpu {
+    color: @teal; /* Teal for CPU */
+    padding: 0 10px;
+}
+
+/* --- Industrial Underline Battery Style --- */
+#battery {
+    padding: 0 12px;
+    margin: 0 2px;
+    color: @green; /* Green for healthy battery */
+    border-bottom: 3px solid alpha(@green, 0.3);
+    transition: all 0.3s ease;
+}
+
+#battery.warning {
+    color: @peach;
+    border-bottom: 3px solid @peach;
+}
+
+#battery.critical {
+    color: @red;
+    border-bottom: 3px solid @red;
+}
+
+#battery.charging, #battery.plugged {
+    color: @yellow;
+    border-bottom: 3px solid @yellow;
+}
+
+/* --- Tooltip & Calendar --- */
+tooltip {
+    background: @mantle;
+    border: 2px solid @mauve;
+    border-radius: 12px;
+}
+
+tooltip label { 
+    color: @text; 
+    padding: 10px;
+}

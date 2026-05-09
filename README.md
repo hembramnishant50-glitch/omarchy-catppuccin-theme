@@ -138,7 +138,7 @@ echo "✔ Waybar restarted."
 
 <div align="center">
 
-<img width="1311" height="737" alt="Hyprlock Preview" src="https://github.com/user-attachments/assets/86b69c94-6096-411f-a41e-4704c238f394" />
+<img width="1311" height="737" alt="Hyprlock Preview" src="https://github.com/user-attachments/assets/e0bcab31-f896-4fc7-afbd-818a18dd6752" />
 
 *Glassmorphism lock screen with live clock, random quotes, and media controls*
 

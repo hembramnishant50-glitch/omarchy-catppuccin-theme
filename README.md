@@ -189,11 +189,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 4. Push: `git push origin feat/my-change`
 5. Open a Pull Request
 
----
-
-## 📄 License
-
-Released under the [MIT License](LICENSE).
 
 ---
 

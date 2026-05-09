@@ -199,7 +199,7 @@ Released under the [MIT License](LICENSE).
 
 <div align="center">
 
-Made with ☕ and `#c29df2`
+Made with ☕ to **Omarchy**
 
 **[⬆ Back to top](#-omarchy-macchiato-core)**
 

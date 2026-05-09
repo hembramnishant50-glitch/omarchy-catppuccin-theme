@@ -3,8 +3,8 @@
   "logo": {
     "type": "auto",
     "source": "/home/nishant/.config/fastfetch/sticker.png",
-    "width": 42,   // Width is double height to keep the square shape
-    "height": 21,
+    "width": 30,   // Width is double height to keep the square shape
+    "height": 15,
     "padding": {
       "top": 2,
       "right": 8   // Gives breathing room between logo and info

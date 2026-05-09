@@ -166,8 +166,10 @@ chmod +x ~/.config/hypr/scripts/*
 
 <br>
 
-### Restor Old Hyperlock and remove Copper Night hyperlock
+### ⏪ Restore Previous Hyprlock (Remove Omarchy Macchiato Core)
+
 ```bash
+# Remove the custom theme and restore your original backup
 rm ~/.config/hypr/hyprlock.conf && \
 mv ~/.config/hypr/hyprlock.conf-Backup ~/.config/hypr/hyprlock.conf
 ```

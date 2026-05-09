@@ -30,7 +30,7 @@
 
 ## 🧠 Philosophy
 
-**Macchiato Core** eliminates the performance tax of modern desktops. By using **pure, solid hex colors** with zero blur and zero transparency, it removes compositor lag and GPU overhead. The result is a sharp, high-contrast workspace that feels instantaneous on any hardware.
+**Macchiato Core** eliminates the performance tax of modern desktops. By using **pure, solid hex colors**. The result is a sharp, high-contrast workspace that feels instantaneous on any hardware.
 
 ---
 

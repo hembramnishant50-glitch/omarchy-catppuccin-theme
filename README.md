@@ -135,33 +135,7 @@ echo "✔ Waybar restarted."
 
 ---
 
-## 🗂 What's Included
 
-```
-omarchy-macchiato-core-theme/
-├── theme.conf                    # Main theme declaration
-├── waybar/
-│   ├── config                    # Module layout & settings
-│   ├── style.css                 # Full Macchiato color scheme
-│   └── scripts/                  # All scripts (auto-chmod'd on install)
-│       ├── wg-manager.sh         # WireGuard VPN manager
-│       ├── yt-dl.sh              # YouTube downloader
-│       ├── app-killer.sh         # Force-kill processes
-│       ├── clamav-scanner.sh     # Malware scanner
-│       ├── mac-spoofer.sh        # MAC address randomizer
-│       ├── metadata_cleaner.sh   # File metadata stripper
-│       ├── shredder.sh           # Secure file deletion
-│       ├── tor_firefox_rotator.sh# Tor identity rotator
-│       ├── spotify.sh            # Spotify launcher/control
-│       ├── window-info.sh        # Active window info
-│       └── setting.sh            # Omarchy settings launcher
-├── chromium/
-│   └── manifest.json             # Browser skin for Chromium/Chrome
-└── assets/
-    ├── preview-desktop.png       # Full desktop screenshot
-    ├── preview-waybar.png        # Waybar close-up
-    └── preview-tools.png         # Tools launcher screenshot
-```
 
 ---
 

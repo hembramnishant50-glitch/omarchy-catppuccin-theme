@@ -175,7 +175,34 @@ mv ~/.config/hypr/hyprlock.conf-Backup ~/.config/hypr/hyprlock.conf
 
 
 ---
+---
+<div align="center">
 
+## <span style="color: #c19cf2;">🎨 Icons & Cursors</span> ✦ *System Theming*
+
+<br>
+
+<img width="85%" alt="Icons and Cursors Preview" src="https://github.com/user-attachments/assets/fd6ff1c9-e3a3-4ea0-bdbe-7316a5233d42" />
+
+<p align="center">
+  <i>Complete the Macchiato Core aesthetic with Papirus Dark Violet folders and Catppuccin Mocha Mauve cursors for a unified desktop experience.</i>
+</p>
+
+</div>
+
+<br>
+
+```bash
+# 1. Install and apply Papirus Dark icons with Violet folders
+yay -S papirus-icon-theme papirus-folders-git
+papirus-folders -C violet --theme Papirus-Dark
+gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+
+# 2. Install and apply Catppuccin Mocha Mauve cursors
+yay -S catppuccin-cursors-mocha
+gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Mauve-Cursors'
+
+---
 
 ## 🤝 Contributing
 

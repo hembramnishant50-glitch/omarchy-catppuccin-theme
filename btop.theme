@@ -1,18 +1,22 @@
-# Catppuccin Macchiato for btop
-# Main background - Solid #1e2030
-theme[main_bg]="#1e2030"
+# Omarchy Macchiato Core for btop
+# Exclusively using the provided Macchiato palette with zero green.
 
-# Main text color (Text)
-theme[main_fg]="#cad3f5"
+# Main background - Left empty for terminal transparency
+theme[main_bg]=""
 
-# Title color for boxes (Lavender)
-theme[title]="#b7bdf8"
+# Main text color (Subtext 1 & Subtext 0)
+theme[main_fg]="#b8c0e0"
+theme[graph_text]="#a5adcb"
 
-# Highlight color for keyboard shortcuts (Peach)
-theme[hi_fg]="#f5a97f"
+# Title color for boxes (Mauve)
+theme[title]="#c6a0f6"
 
-# Background color of selected item (Surface 1)
+# Highlight color for keyboard shortcuts (Pink)
+theme[hi_fg]="#f5bde6"
+
+# Background color of selected item & meters (Surface 1 & Surface 0)
 theme[selected_bg]="#494d64"
+theme[meter_bg]="#363a4f"
 
 # Foreground color of selected item (Mauve)
 theme[selected_fg]="#c6a0f6"
@@ -20,54 +24,61 @@ theme[selected_fg]="#c6a0f6"
 # Color of inactive/disabled text (Overlay 0)
 theme[inactive_fg]="#6e738d"
 
-# Misc colors for processes (Teal)
-theme[proc_misc]="#8bd5ca"
+# Misc colors for processes (Pink)
+theme[proc_misc]="#f5bde6"
 
-# Box outline colors (Surface 2 for that "Modern Line" look)
-theme[cpu_box]="#5b6078"
-theme[mem_box]="#5b6078"
-theme[net_box]="#5b6078"
-theme[proc_box]="#5b6078"
+# Box outline colors (Mauve)
+theme[cpu_box]="#c6a0f6"
+theme[mem_box]="#c6a0f6"
+theme[net_box]="#c6a0f6"
+theme[proc_box]="#c6a0f6"
 
-# Box divider line (Surface 1)
-theme[div_line]="#494d64"
+# Box divider line (Surface 2)
+theme[div_line]="#5b6078"
 
-# Temperature graph colors (Blue -> Mauve -> Red)
-theme[temp_start]="#8aadf4"
-theme[temp_mid]="#c6a0f6"
+# --- GRADIENTS ---
+
+# Battery graph colors (Pink -> Mauve -> Red)
+theme[batt_start]="#f5bde6"
+theme[batt_mid]="#c6a0f6"
+theme[batt_end]="#ed8796"
+
+# Temperature graph colors (Mauve -> Maroon -> Red)
+theme[temp_start]="#c6a0f6"
+theme[temp_mid]="#ee99a0"
 theme[temp_end]="#ed8796"
 
-# CPU graph colors (Green -> Yellow -> Red)
-theme[cpu_start]="#a6da95"
-theme[cpu_mid]="#eed49f"
+# CPU graph colors (Mauve -> Peach -> Red)
+theme[cpu_start]="#c6a0f6"
+theme[cpu_mid]="#f5a97f"
 theme[cpu_end]="#ed8796"
 
-# Mem/Disk free meter
-theme[free_start]="#363a4f"
-theme[free_mid]="#a6da95"
-theme[free_end]="#8bd5ca"
+# Mem/Disk free meter (Surface 1 -> Overlay 2 -> Subtext 1)
+theme[free_start]="#494d64"
+theme[free_mid]="#939ab7"
+theme[free_end]="#b8c0e0"
 
-# Mem/Disk cached meter
-theme[cached_start]="#363a4f"
-theme[cached_mid]="#8aadf4"
-theme[cached_end]="#7dc4e4"
+# Mem/Disk cached meter (Surface 1 -> Mauve -> Pink)
+theme[cached_start]="#494d64"
+theme[cached_mid]="#c6a0f6"
+theme[cached_end]="#f5bde6"
 
-# Mem/Disk available meter
-theme[available_start]="#363a4f"
-theme[available_mid]="#eed49f"
-theme[available_end]="#f5a97f"
+# Mem/Disk available meter (Surface 1 -> Peach -> Mauve)
+theme[available_start]="#494d64"
+theme[available_mid]="#f5a97f"
+theme[available_end]="#c6a0f6"
 
-# Mem/Disk used meter
-theme[used_start]="#363a4f"
-theme[used_mid]="#ed8796"
-theme[used_end]="#ee99a0"
+# Mem/Disk used meter (Surface 1 -> Maroon -> Red)
+theme[used_start]="#494d64"
+theme[used_mid]="#ee99a0"
+theme[used_end]="#ed8796"
 
-# Download graph colors
+# Download graph colors (Mantle -> Mauve -> Pink)
 theme[download_start]="#1e2030"
-theme[download_mid]="#b7bdf8"
-theme[download_end]="#8aadf4"
+theme[download_mid]="#c6a0f6"
+theme[download_end]="#f5bde6"
 
-# Upload graph colors
+# Upload graph colors (Mantle -> Pink -> Maroon)
 theme[upload_start]="#1e2030"
-theme[upload_mid]="#c6a0f6"
-theme[upload_end]="#f5bde6"
+theme[upload_mid]="#f5bde6"
+theme[upload_end]="#ee99a0"

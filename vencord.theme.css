@@ -4,6 +4,4 @@
 * @version 0.2.0
 * @description Catppuccin Macchiato with custom purple accents.
 **/
-/* You can also append Catppuccin colors to customize the accent, e.g. */
-/* mocha (pink accent)*/
 @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha-pink.theme.css");

@@ -202,6 +202,11 @@ gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 yay -S catppuccin-cursors-mocha
 gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Mauve-Cursors'
 
+```
+
+
+
+---
 ---
 
 ## 🤝 Contributing

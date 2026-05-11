@@ -161,7 +161,37 @@ cp -r ~/.config/omarchy/current/theme/scripts \
 # 3. Make scripts executable
 chmod +x ~/.config/hypr/scripts/*
 ```
+---
 
+> ## ⚠️ IMPORTANT: Fix Black Screen on Lock ⚠️
+>
+> **How to stop your screen from turning black when you lock it**
+>
+> By default, the screen turns off 3 seconds after you lock it. If you want to keep your new lock screen visible, follow these 3 easy steps:
+>
+> **1. Open the file** — Open your terminal, paste this command, and press Enter:
+>
+> ```bash
+> nano ~/.local/share/omarchy/bin/omarchy-system-lock
+> ```
+>
+> **2. Change one line** — Scroll all the way to the bottom of the file. Find the line that says:
+>
+> ```bash
+> omarchy-brightness-display off
+> ```
+>
+> Put a `#` symbol at the very start of that line so it looks like this:
+>
+> ```bash
+> # omarchy-brightness-display off
+> ```
+>
+> **3. Save and Exit**
+> - Press `Ctrl + O` on your keyboard, then press `Enter` to save.
+> - Press `Ctrl + X` to exit the editor.
+
+---
 <br>
 
 ### ⏪ Restore Previous Hyprlock (Remove Omarchy Macchiato Core)

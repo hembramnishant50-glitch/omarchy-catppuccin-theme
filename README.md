@@ -163,7 +163,7 @@ chmod +x ~/.config/hypr/scripts/*
 ```
 ---
 
-> ## ⚠️ IMPORTANT: Fix Black Screen on Lock ⚠️
+> ## ⚠️ IMPORTANT: Fix Black Screen on Lock if it is happening ⚠️
 >
 > **How to stop your screen from turning black when you lock it**
 >

@@ -167,7 +167,6 @@ chmod +x ~/.config/hypr/scripts/*
 >
 > **How to stop your screen from turning black when you lock it**
 >
-> By default, the screen turns off 3 seconds after you lock it. If you want to keep your new lock screen visible, follow these 3 easy steps:
 >
 > **1. Open the file** — Open your terminal, paste this command, and press Enter:
 >

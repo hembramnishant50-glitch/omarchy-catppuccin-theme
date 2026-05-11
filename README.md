@@ -204,11 +204,11 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Mauve-C
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
 
-  Fork the repo
-  Create your feature branch: `git checkout -b feat/my-change`
-  Commit your changes: `git commit -m 'feat: add my change'`
-  Push: `git push origin feat/my-change`
-  Open a Pull Request
+1. Fork the repo
+2. Create your feature branch: `git checkout -b feat/my-change`
+3. Commit your changes: `git commit -m 'feat: add my change'`
+4. Push: `git push origin feat/my-change`
+5. Open a Pull Request
 
 
 ---

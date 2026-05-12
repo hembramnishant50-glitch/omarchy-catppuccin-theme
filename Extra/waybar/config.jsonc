@@ -14,7 +14,8 @@
         "orientation": "horizontal",
         "modules": [
             "clock",
-            "hyprland/window",
+            "custom/window",
+            "custom/spotify",
             "hyprland/workspaces",
             "pulseaudio",
             "network",
@@ -24,15 +25,18 @@
     },
 
     "clock": {
-        "format": "<b>{:%I:%M %p}</b>",
+        "format": "<b>󰥔 {:%I:%M %p}</b>",
+        "format-alt": "<b>󰃭 {:%A, %B %d, %Y}</b>",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
             "mode": "month",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
             "on-scroll": 1,
             "format": {
-                "months": "<span color='#be9aef'><b>{}</b></span>",
-                "days": "<span color='#cad3f5'><b>{}</b></span>",
-                "weeks": "<span color='#5b6078'><b>W{}</b></span>",
+                "months": "<span color='#be9aef'><b>󰃭 {}</b></span>",
+                "days": "<span color='#cad3f5'>{}</span>",
+                "weeks": "<span color='#5b6078'><i>W{}</i></span>",
                 "weekdays": "<span color='#eed49f'><b>{}</b></span>",
                 "today": "<span color='#be9aef'><b><u>{}</u></b></span>"
             }
@@ -44,159 +48,22 @@
         }
     },
 
-    "hyprland/window": {
-        "format": "{class}", 
-        "max-length": 35,
-        "separate-outputs": true,
-        "rewrite": {
-            // --- Defaults & Omarchy ---
-            "": "󱄅 Omarchy",
-            // --- System & Shell ---
-            "waybar": "󱑆 Waybar",
-            "walker": "󰀻 Walker",
-            "org.omarchy.terminal": " Terminal",
-            "pavucontrol": "󰓃 Audio",
-            "omarchy-launch-audio": "󰓃 Audio",
-            "org.omarchy.wiremix": "󰓃 Audio",
-            "omarchy-launch-wifi": "󰖩 WiFi",
-            "org.omarchy.impala": "󰖩 Wi-Fi",
-            "gnome-control-center": "⚙️ Settings",
-            "1password": "󰷛 1Password",
-            "com.heroicgameslauncher.hgl.aethergazer": "󱜙 Aether Gazer",
-            "aether": "󰏫 Aether",
-            "chrome-launchpad.37signals.com__-Default": "󰄛 Basecamp",
+    "custom/window": {
+        "exec": "~/.config/waybar/scripts/windows-info.sh", 
+        "format": "{}",
+        "return-type": "text", 
+        "interval": 1, 
+        "max-length": 35
+    },
 
-            // --- Browsers ---
-            "google-chrome": " Chrome",
-            "chromium": " Chromium",
-            "firefox": " Firefox",
-            "org.mozilla.firefox": " Firefox",
-            "io.github.zen_browser.zen": "󰈹 Zen",
-            "brave-browser": " Brave",
-            "com.brave.Browser": " Brave",
-            "librewolf": "󰈹 LibreWolf",
-            "vivaldi": " Vivaldi",
-
-            // --- AI Tools ---
-            "chatgpt": "󰚩 ChatGPT",
-            "chrome-chatgpt.com__-default": "󰚩 ChatGPT",
-            "gemini": "󰊭 Gemini AI",
-            "chrome-gemini.google.com__-default": "󰊭 Gemini AI",
-            "chrome-gemini.google.com__app-Default": "󰊭 Gemini AI",
-            "claude": "󰘳 Claude AI",
-            "chrome-claude.ai__-default": "󰘳 Claude AI",
-            "perplexity": "󰭹 Perplexity",
-            "chrome-perplexity.ai__-default": "󰭹 Perplexity",
-            "chrome-chat.deepseek.com__-Default": "󰠧 DeepSeek",
-            "chrome-deepseek.com__-default": "󰠧 DeepSeek",
-            "chrome-notebooklm.google.com__-default": "󰠮 NotebookLM",
-
-            // --- Google Suite (Native & Web) ---
-            "chrome-google.com__-default": " Google Search",
-            "google-gmail": "󰇮 Gmail",
-            "chrome-mail.google.com__-default": "󰇮 Gmail",
-            "google-drive": "󰏫 Drive",
-            "chrome-drive.google.com__-default": "󰏫 Drive",
-            "google-calendar": "󰃭 Calendar",
-            "chrome-calendar.google.com__-default": "󰃭 Calendar",
-            "google-keep": "󰟶 Keep",
-            "chrome-keep.google.com__-default": "󰟶 Keep",
-            "google-maps": "󰉙 Maps",
-            "chrome-maps.google.com__-default": "󰉙 Maps",
-            "google-docs": "󰈙 Docs",
-            "chrome-docs.google.com__-default": "󰈙 Docs",
-            "google-sheets": "󱎏 Sheets",
-            "chrome-sheets.google.com__-default": "󱎏 Sheets",
-            "google-slides": "󰐨 Slides",
-            "chrome-slides.google.com__-default": "󰐨 Slides",
-            "google-meet": "󰘪 Meet",
-            "chrome-meet.google.com__-default": "󰘪 Meet",
-            "google-photos": "󰄄 Photos",
-            "chrome-photos.google.com__-default": "󰄄 Photos",
-            "google-youtube": "󰗃 YouTube",
-            "chrome-youtube.com__-default": "󰗃 YouTube",
-
-            // --- Proton Suite (Native & Web) ---
-            "proton-mail": "󰇮 Proton Mail",
-            "chrome-mail.proton.me__-default": "󰇮 Proton Mail",
-            "proton-drive": "󱑢 Proton Drive",
-            "chrome-drive.proton.me__-default": "󱑢 Proton Drive",
-            "proton-calendar": "󰃭 Proton Calendar",
-            "chrome-calendar.proton.me__-default": "󰃭 Proton Calendar",
-            "proton-pass": "󰷛 Proton Pass",
-            "chrome-pass.proton.me__-default": "󰷛 Proton Pass",
-            "protonvpn": "󰒄 Proton VPN",
-            "proton-vpn-app": "󰒄 Proton VPN",
-            "chrome-protonvpn.com__-default": "󰒄 Proton VPN",
-            "proton-wallet": "󱠔 Proton Wallet",
-            "chrome-wallet.proton.me__-default": "󱠔 Proton Wallet",
-
-            // --- Development & Coding ---
-            "code": "󰨞 VS Code",
-            "com.visualstudio.code": "󰨞 VS Code",
-            "chrome-github.com__-default": "󰊤 GitHub",
-            "chrome-stackoverflow.com__-default": "󰓌 Stack Overflow",
-            "nvim": " Neovim",
-            "vim": " Vim",
-            "ghostty": " Ghostty",
-            "com.mitchellh.ghostty": " Ghostty",
-            "kitty": " Kitty",
-            "alacritty": " Alacritty",
-            "org.omarchy.lazydocker": "󰡨 Lazydocker",
-
-            // --- Design & Productivity Management ---
-            "chrome-notion.so__-default": "󰇈 Notion",
-            "chrome-canva.com__-default": "󰕑 Canva",
-            "chrome-figma.com__-default": "󰈔 Figma",
-            "chrome-trello.com__-default": "󰔡 Trello",
-            "obsidian": "󱓧 Obsidian",
-            "md.obsidian.Obsidian": "󱓧 Obsidian",
-            "org.zotero.Zotero": "󱓷 Zotero",
-            "net.ankiweb.Anki": "󰮔 Anki",
-            "chrome-web.careerwill.com__-Default": "󱓷 Careerwill",
-            "org.libreoffice.LibreOffice": "󰏆 LibreOffice",
-            "com.github.xournalpp.xournalpp": "󱞈 Xournal++",
-            "chrome-discord.com__channels_@me-Default": "󰙯 Discord",
-            "dev.vencord.Vesktop": "󰙯 Vesktop",
-            "Vesktop": "󰙯 Vesktop",
-
-            // --- Social & Communication ---
-            "discord": "󰙯 Discord",
-            "com.discordapp.Discord": "󰙯 Discord",
-            "chrome-discord.com__-default": "󰙯 Discord",
-            "chrome-slack.com__-default": "󰒱 Slack",
-            "chrome-linkedin.com__-default": "󰀶 LinkedIn",
-            "chrome-x.com__-default": "󰕄 Twitter / X",
-            "chrome-x.com__compose_post-Default": "󰮑 X Compose",
-            "reddit": "󰑍 Reddit",
-            "chrome-reddit.com__-default": "󰑍 Reddit",
-            "chrome-www.reddit.com__-Default": "󰑍 Reddit",
-            "org.telegram.desktop": " Telegram",
-            "com.ayugram.desktop": " AyuGram",
-            "whatsapp": " WhatsApp",
-
-            // --- Media & Entertainment ---
-            "spotify": "󰓇 Spotify",
-            "chrome-spotify.com__-default": "󰓇 Spotify",
-            "vlc": "󰕼 VLC",
-            "org.videolan.VLC": "󰕼 VLC",
-            "com.rafaelmardojai.Blanket": "󱠡 Blanket",
-
-            // --- Utilities & Files ---
-            "thunar": " Thunar",
-            "org.gnome.Nautilus": " Files",
-            "bitwarden": "󰞀 Bitwarden",
-            "com.bitwarden.desktop": "󰞀 Bitwarden",
-            "qbittorrent": "󱑢 qBittorrent",
-            "abdownloadmanager": "󰇚 AB Manager",
-            "com.abdownloadmanager.abdownloadmanager": "󰇚 AB Manager",
-            "Com-abdownloadmanager-desktop-appkt": "󰇚 AB Manager",
-            "org.gnome.clocks": "󱎫 Clocks",
-            "com.github.johnfactotum.Foliate": "󰂵 Foliate",
-            "org.bleachbit.BleachBit": "󰃢 BleachBit",
-            "com.github.tenderowl.frog": "󰋚 Frog",
-            "io.github.kolunmi.Bazaar": "󰀻 Bazaar"
-        }
+    "custom/spotify": {
+        "exec": "~/.config/waybar/scripts/spotify.sh",
+        "return-type": "json",
+        "format": "{}",
+        "tail": true, 
+        "on-click": "playerctl -p spotify play-pause",
+        "on-scroll-up": "playerctl -p spotify next",
+        "on-scroll-down": "playerctl -p spotify previous"
     },
 
     "hyprland/workspaces": {
@@ -231,10 +98,12 @@
     },
 
     "battery": {
-    "states": { "warning": 30, "critical": 15 },
-    "format": "{icon} {capacity}%",       // ← added percentage
-    "format-icons": [" ", " ", " ", " ", " "],
-    "on-click": "omarchy-menu power",
-    "tooltip-format": "{capacity}%"
-    },
+        "states": { "warning": 30, "critical": 15 },
+        "format": "{icon} {capacity}%",       
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-icons": [" ", " ", " ", " ", " "],
+        "on-click": "omarchy-menu power",
+        "tooltip-format": "Battery: {capacity}%"
+    }
 }

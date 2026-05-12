@@ -1,4 +1,4 @@
-/* --- Omarchy Macchiato: Final Integrated Edition --- */
+/* --- Omarchy Macchiato: Clean & Unified Edition --- */
 
 * {
     font-family: "JetBrainsMono Nerd Font", Bold;
@@ -16,59 +16,62 @@ window#waybar {
     background-color: #1e2030;
     border: 2px solid #be9aef; 
     border-radius: 30px;
-    padding: 1px 12px;
+    padding: 3px 14px; 
     margin: 2px 0;
+}
+
+/* SPACING FIX: Beautiful spacing between all modules */
+#clock, #custom-window, #custom-spotify, #workspaces, #pulseaudio, #network, #battery, #custom-antivirus {
+    margin: 0 4px; 
 }
 
 /* WORKSPACES */
 #workspaces button {
     color: #cad3f5;
-    padding: 0 4px; /* Shorter when inactive */
-    margin: 2px 4px;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); /* Smooth snap effect */
+    padding: 0 6px; 
+    border-radius: 12px;
 }
 
 #workspaces button.active {
     background-color: #be9aef; 
     color: #1e2030;
     border-radius: 12px;
-    padding: 0 15px; /* Expands when active */
+    padding: 0 15px; 
     min-width: 30px;
 }
 
 #workspaces button:hover {
     background: rgba(190, 154, 239, 0.2);
-    border-radius: 12px;
 }
 
-/* MODULES GENERAL */
-#clock, #window, #pulseaudio, #network, #battery, #custom-antivirus {
-    padding: 0 10px;
+/* MODULES GENERAL (Clean text look for everything) */
+#clock, #custom-window, #custom-spotify, #pulseaudio, #network, #battery, #custom-antivirus {
+    padding: 2px 8px;
     color: #cad3f5;
+    font-weight: 500;
 }
 
-/* DEFENDER COLOR */
-#custom-antivirus {
-    color: #cad3f5; 
-    font-size: 15px;
+/* Hide Spotify padding when no music is playing */
+#custom-spotify.stopped {
+    padding: 0;
+    margin: 0;
 }
 
-/* BATTERY COLORS */
-#battery {
-    color: #cad3f5; /* Your Healthy Green */
-}
-
-#battery.charging {
-    color: #cad3f5; /* Your Charging Orange */
+/* BATTERY (No custom colors, no glow) */
+#battery, #battery.charging {
+    box-shadow: none;
+    text-shadow: none;
 }
 
 /* LOGIC COLORS */
-#pulseaudio.muted, #network.disconnected { color: #ed8796; }
+#pulseaudio.muted, #network.disconnected { 
+    color: #ed8796; 
+}
 
-/* HOVER EFFECT */
-#clock:hover, #window:hover, #pulseaudio:hover, #network:hover, #battery:hover, #custom-antivirus:hover {
-    background: rgba(190, 154, 239, 0.1); 
-    border-radius: 15px;
+/* HOVER EFFECT (Subtle background on hover for all modules) */
+#clock:hover, #custom-window:hover, #custom-spotify:hover, #pulseaudio:hover, #network:hover, #battery:hover, #custom-antivirus:hover {
+    background: rgba(190, 154, 239, 0.2); 
+    border-radius: 12px;
 }
 
 /* TOOLTIPS & CALENDAR */

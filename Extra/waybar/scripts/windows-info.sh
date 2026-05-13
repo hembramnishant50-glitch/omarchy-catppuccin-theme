@@ -48,7 +48,7 @@ case "$class" in
     *teams.microsoft.com*)  app_name="󰊻 Teams" ;;
     *onedrive.live.com*)    app_name="󰏫 OneDrive" ;;
     *office.com*)           app_name="󰏆 Microsoft 365" ;;
-    *app.zoom.us*)          app_name="󰘪 Zoom" ;;
+    *app.zoom.us*)          app_name=" Zoom" ;;
     *web.whatsapp.com*)     app_name=" WhatsApp" ;;
     *github.com*)           app_name="󰊤 GitHub" ;;
     *stackoverflow.com*)    app_name="󰓌 Stack Overflow" ;;
@@ -59,6 +59,10 @@ case "$class" in
     *reddit.com*)           app_name="󰑍 Reddit" ;;
     *spotify.com*) app_name="󰓇 Spotify" ;;
     *google.com*)           app_name=" Google Search" ;;
+    *launchpad.37signals.com*) app_name="󰓾 Basecamp" ;;
+    *app.fizzy.do*) app_name="󰄬 Fizzy" ;;
+    *app.hey.com*)            app_name="󰇮 HEY Mail" ;;
+    *x.com*)                app_name=" X" ;;
 
     # --- OMARCHY ECOSYSTEM ---
     "org.omarchy.terminal") app_name=" Terminal" ;;
@@ -66,6 +70,16 @@ case "$class" in
     "omarchy-launch-wifi"|"org.omarchy.impala") app_name="󰖩 WiFi" ;;
     "org.omarchy.lazydocker") app_name="󰡨 Lazydocker" ;;
     "omarchy-cleaner"|"org.bleachbit.BleachBit"|"bleachbit-root") app_name="󰃢 Cleaner" ;;
+    "aether"|"li.oever.aether") app_name="󰏫 Aether" ;;
+    "Imv"|*imv*)              app_name="󰋩 Imv" ;;
+    "Org.kde.kdenlive"|*kdenlive*) app_name="󱄢 Kdenlive" ;;
+    "Localsend"|*localsend*)                app_name="󰩟 LocalSend" ;;
+    "Mpv"|*mpv*)                            app_name=" MPV" ;;
+    "Typora"|*typora*)                      app_name="󰽛 Typora" ;;
+    "Com.github.PintaProject.Pinta"|*Pinta*)        app_name=" Pinta" ;;
+    "System-config-printer"|*config-printer*)       app_name="󰐪 Printers" ;;
+    "Python3"|*python3*)    app_name="󰌠 Python3" ;;
+    "java"|*java*|*Java*)   app_name=" Java" ;;
 
     # --- SYSTEM, SHELL & TERMINALS ---
     "waybar")               app_name="󱑆 Waybar" ;;
@@ -73,6 +87,7 @@ case "$class" in
     "ghostty"|"com.mitchellh.ghostty") app_name=" Ghostty" ;;
     "kitty")                app_name=" Kitty" ;;
     "alacritty")            app_name=" Alacritty" ;;
+    "Alacritty"|*alacritty*)                app_name=" Alacritty" ;;
 
     # --- BROWSERS ---
     "google-chrome"|"chromium") app_name=" Chrome" ;;
@@ -80,6 +95,34 @@ case "$class" in
     "brave-browser")        app_name=" Brave" ;;
     "librewolf")            app_name="󰈹 LibreWolf" ;;
     "vivaldi")              app_name=" Vivaldi" ;;
+    "Brave-origin-beta"|*origin-beta*) app_name="󰖟 Brave Origin" ;;
+
+    # --- GNOME APPS ---
+    "gnome-control-center"|"org.gnome.Settings") app_name="⚙️ Settings" ;;
+    "org.gnome.Nautilus")       app_name=" Files" ;;
+    "gnome-terminal"|"org.gnome.Console") app_name=" Terminal" ;;
+    "org.gnome.TextEditor"|"gedit") app_name="󰈙 Text Editor" ;;
+    "org.gnome.Calculator")     app_name=" Calculator" ;;
+    "org.gnome.Calendar")       app_name="󰃭 Calendar" ;;
+    "org.gnome.Characters")     app_name="󰅩 Characters" ;;
+    "org.gnome.clocks")         app_name="󱎫 Clocks" ;;
+    "org.gnome.Contacts")       app_name="󰊤 Contacts" ;;
+    "gnome-disks"|"org.gnome.DiskUtility") app_name="󰋊 Disks" ;;
+    "evince"|"org.gnome.Evince") app_name="󰈙 Document Viewer" ;;
+    "org.gnome.Extensions")     app_name="󰟖 Extensions" ;;
+    "org.gnome.font-viewer")    app_name=" Fonts" ;;
+    "yelp"|"org.gnome.Yelp")    app_name="󰋖 Help" ;;
+    "eog"|"org.gnome.eog"|"org.gnome.Loupe") app_name="󰋩 Image Viewer" ;;
+    "org.gnome.Logs")           app_name="󰒎 Logs" ;;
+    "org.gnome.Maps")           app_name="󰉙 Maps" ;;
+    "org.gnome.Music")          app_name="󰝚 Music" ;;
+    "org.gnome.Photos")         app_name="󰄄 Photos" ;;
+    "gnome-software"|"org.gnome.Software") app_name="󰮯 Software" ;;
+    "gnome-system-monitor"|"org.gnome.SystemMonitor") app_name="󰒋 System Monitor" ;;
+    "gnome-tweaks"|"org.gnome.tweaks") app_name="ﾰ Tweaks" ;;
+    "totem"|"org.gnome.Totem")  app_name="󰕼 Videos" ;;
+    "org.gnome.Weather")        app_name="󰖐 Weather" ;;
+    "epiphany"|"org.gnome.Epiphany") app_name="󰖟 Web" ;;
 
     # --- OFFICE SUITES ---
     *libreoffice*|*LibreOffice*|*Libreoffice-startcenter*|"org.libreoffice.LibreOffice") app_name="󰏆 LibreOffice" ;;
@@ -97,6 +140,11 @@ case "$class" in
     "vim")                  app_name=" Vim" ;;
     "obsidian"|"md.obsidian.Obsidian") app_name="󱓧 Obsidian" ;;
     "com.github.xournalpp.xournalpp") app_name="󱞈 Xournal++" ;;
+    "Zoom"|*zoom*)          app_name=" Zoom" ;;
+
+    # --- Games APPS ---
+    "Minecraft-launcher"|*minecraft*) app_name="󰍳 Minecraft" ;;
+    "Minecraft"|*minecraft*) app_name="󰍳 Minecraft" ;;
 
     # --- COMMUNICATION & SOCIAL ---
     "discord"|"com.discordapp.Discord"|"dev.vencord.Vesktop"|"Vesktop") app_name="󰙯 Discord" ;;
@@ -113,9 +161,64 @@ case "$class" in
     "io.github.kolunmi.Bazaar") app_name="󰀻 Bazaar" ;;
     "com.heroicgameslauncher.hgl.aethergazer") app_name="󱜙 Aether Gazer" ;;
     "aether"|"li.oever.aether") app_name="󰏫 Aether" ;;
+    "Org.cryptomator.launcher.Cryptomator"*|*cryptomator*) app_name="󰌆 Cryptomator" ;;
+    "TUI.float"|*TUI.float*) app_name="󰕪 TUI Float" ;;
+    "TUI.tile"|*TUI.tile*)   app_name="󰕪 TUI Tile" ;;
+    "Nwg-look"|*nwg-look*)    app_name="󰏘 Nwg-Look" ;;
+    "Fr.handbrake.ghb"|*handbrake*) app_name="󰕼 HandBrake" ;;
+    "Org.bunkus.mkvtoolnix-gui"|*mkvtoolnix*) app_name="󰈫 MKVToolNix" ;;
+    "Io.gitlab.adhami3310.Converter"|*Converter*) app_name="󰕡 Switcheroo" ;;
+
+    # --- EXTRA APPS ---
+    "Com.rafaelmardojai.Blanket"|*Blanket*) app_name="󰋋 Blanket" ;;
+    "Dev.bragefuglseth.Keypunch.Devel"|*Keypunch*) app_name="󰌌 Keypunch" ;;
+
+
+    # --- TOP FLATHUB / FLATPAK APPS ---
+        "com.github.tchx84.Flatseal"|*Flatseal*) app_name="󰟆 Flatseal" ;;
+        "com.obsproject.Studio"|*obsproject*) app_name="󰑊 OBS Studio" ;;
+        "org.gimp.GIMP"|*gimp*)           app_name=" GIMP" ;;
+        "org.kde.krita"|*krita*)          app_name=" Krita" ;;
+        "org.inkscape.Inkscape"|*inkscape*) app_name=" Inkscape" ;;
+        "org.blender.Blender"|*blender*)  app_name="󰂫 Blender" ;;
+        "com.valvesoftware.Steam"|*steam*) app_name=" Steam" ;;
+        "com.usebottles.bottles"|*bottles*) app_name="󱄄 Bottles" ;;
+        "net.lutris.Lutris"|*lutris*)     app_name="󰊗 Lutris" ;;
+        "com.heroicgameslauncher.hgl"|*heroic*) app_name="󰊗 Heroic" ;;
+        "org.signal.Signal"|*signal*)     app_name="󰭹 Signal" ;;
+        "com.slack.Slack"|*slack*)        app_name=" Slack" ;;
+        "org.mozilla.Thunderbird"|*thunderbird*) app_name=" Thunderbird" ;;
+        "com.getpostman.Postman"|*postman*) app_name="󰛮 Postman" ;;
+        "com.vscodium.codium"|*vscodium*) app_name="󰨞 VSCodium" ;;
+        "org.videolan.VLC"|*vlc*)         app_name="󰕼 VLC" ;;
+        "com.stremio.Stremio"|*stremio*)  app_name="󰕼 Stremio" ;;
+        "org.qbittorrent.qBittorrent"|*qbittorrent*) app_name="󱑢 qBittorrent" ;;
+        "org.transmissionbt.Transmission"|*transmission*) app_name="󱑢 Transmission" ;;
+        "org.audacityteam.Audacity"|*audacity*) app_name="󰎆 Audacity" ;;
+        "com.spotify.Client"|*spotify*)   app_name="󰓇 Spotify" ;;
+        "us.zoom.Zoom"|*zoom*)            app_name=" Zoom" ;;
+        "com.anydesk.Anydesk"|*anydesk*)  app_name="󰢹 AnyDesk" ;;
+        "com.teamviewer.TeamViewer"|*teamviewer*) app_name="󰢹 TeamViewer" ;;
+        "Io.github.linx_systems.ClamUI"|*ClamUI*) app_name="󰕥 ClamUI" ;;
+        "Dev.geopjr.Collision"|*Collision*) app_name="󰛿 Collision" ;;
+        "App.drey.Dialect"|*Dialect*) app_name="󰗊 Dialect" ;;
+        "Fingergo"|*Fingergo*)   app_name="󰆠 Fingergo" ;;
+        "De.swsnr.keepmeawake"|*keepmeawake*) app_name="󰅎 Keep Me Awake" ;;
+        "Io.github.vmkspv.lenspect"|*lenspect*) app_name="󰈈 Lenspect" ;;
+        "Io.github.fabrialberio.pinapp"|*pinapp*) app_name="󰐃 PinApp" ;;
+        "Garden.jamie.Morphosis"|*Morphosis*)   app_name="󱁉 Morphosis" ;;
+        "Io.gitlab.theevilskeleton.Upscaler"|*Upscaler*) app_name="󰊕 Upscaler" ;;
+        "Org.gnome.gitlab.YaLTeR.VideoTrimmer"|*VideoTrimmer*) app_name="󰆐 Video Trimmer" ;;
+        "Io.github.flattool.Warehouse"|*Warehouse*)     app_name="󰏗 Warehouse" ;;
+        
+        
 
     # --- DOWNLOAD MANAGERS ---
     *abdownloadmanager*|*ABDownloadManager*) app_name="󰇚 AB Manager" ;;
+    "Com-tonikelope-megabasterd-MainPanel"|*megabasterd*) app_name="󰏔 Megabasterd" ;;
+
+    # --- TOR ---
+    "Tor"|*tor*)            app_name="󰈹 Tor Browser" ;;
 
     # --- FALLBACK (Any app not listed above) ---
     *) 

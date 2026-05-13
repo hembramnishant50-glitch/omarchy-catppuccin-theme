@@ -17,6 +17,7 @@
             "custom/window",
             "custom/spotify",
             "hyprland/workspaces",
+            "custom/setting",
             "pulseaudio",
             "network",
             "custom/antivirus",
@@ -74,6 +75,12 @@
         "persistent-workspaces": {
             "*": 3
         }
+    },
+
+    "custom/setting": {
+    "format": "󰒓",
+    "tooltip-format": "Omarchy Control Panel",
+    "on-click": "~/.config/waybar/scripts/setting.sh"
     },
 
     "pulseaudio": {

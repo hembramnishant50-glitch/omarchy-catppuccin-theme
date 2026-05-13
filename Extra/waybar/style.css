@@ -21,7 +21,7 @@ window#waybar {
 }
 
 /* SPACING FIX: Beautiful spacing between all modules */
-#clock, #custom-window, #custom-spotify, #workspaces, #pulseaudio, #network, #battery, #custom-antivirus {
+#clock, #custom-window, #custom-spotify, #workspaces, #custom-setting, #pulseaudio, #network, #battery, #custom-antivirus {
     margin: 0 4px; 
 }
 
@@ -45,7 +45,7 @@ window#waybar {
 }
 
 /* MODULES GENERAL (Clean text look for everything) */
-#clock, #custom-window, #custom-spotify, #pulseaudio, #network, #battery, #custom-antivirus {
+#clock, #custom-window, #custom-spotify, #custom-setting, #pulseaudio, #network, #battery, #custom-antivirus {
     padding: 2px 8px;
     color: #cad3f5;
     font-weight: 500;
@@ -57,11 +57,6 @@ window#waybar {
     margin: 0;
 }
 
-/* BATTERY (No custom colors, no glow) */
-#battery, #battery.charging {
-    box-shadow: none;
-    text-shadow: none;
-}
 
 /* LOGIC COLORS */
 #pulseaudio.muted, #network.disconnected { 
@@ -69,7 +64,7 @@ window#waybar {
 }
 
 /* HOVER EFFECT (Subtle background on hover for all modules) */
-#clock:hover, #custom-window:hover, #custom-spotify:hover, #pulseaudio:hover, #network:hover, #battery:hover, #custom-antivirus:hover {
+#clock:hover, #custom-window:hover, #custom-spotify:hover, #custom-setting:hover, #pulseaudio:hover, #network:hover, #battery:hover, #custom-antivirus:hover {
     background: rgba(190, 154, 239, 0.2); 
     border-radius: 12px;
 }

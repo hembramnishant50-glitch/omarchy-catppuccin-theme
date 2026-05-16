@@ -1,84 +1,83 @@
-# Omarchy Macchiato Core for btop
-# Exclusively using the provided Macchiato palette with zero green.
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="#1E1E2E"
 
-# Main background - Left empty for terminal transparency
-theme[main_bg]=""
+# Main text color
+theme[main_fg]="#CDD6F4"
 
-# Main text color (Subtext 1 & Subtext 0)
-theme[main_fg]="#b8c0e0"
-theme[graph_text]="#a5adcb"
+# Title color for boxes
+theme[title]="#CDD6F4"
 
-# Title color for boxes (Mauve)
-theme[title]="#c6a0f6"
+# Highlight color for keyboard shortcuts (Changed to Purple)
+theme[hi_fg]="#c6a0f6"
 
-# Highlight color for keyboard shortcuts (Pink)
-theme[hi_fg]="#f5bde6"
+# Background color of selected item in processes box
+theme[selected_bg]="#45475A"
 
-# Background color of selected item & meters (Surface 1 & Surface 0)
-theme[selected_bg]="#494d64"
-theme[meter_bg]="#363a4f"
-
-# Foreground color of selected item (Mauve)
+# Foreground color of selected item in processes box (Changed to Purple)
 theme[selected_fg]="#c6a0f6"
 
-# Color of inactive/disabled text (Overlay 0)
-theme[inactive_fg]="#6e738d"
+# Color of inactive/disabled text
+theme[inactive_fg]="#7F849C"
 
-# Misc colors for processes (Pink)
-theme[proc_misc]="#f5bde6"
+# Color of text appearing on top of graphs, i.e uptime and current network graph scaling
+theme[graph_text]="#F5E0DC"
 
-# Box outline colors (Mauve)
-theme[cpu_box]="#c6a0f6"
-theme[mem_box]="#c6a0f6"
-theme[net_box]="#c6a0f6"
-theme[proc_box]="#c6a0f6"
+# Background color of the percentage meters
+theme[meter_bg]="#45475A"
 
-# Box divider line (Surface 2)
-theme[div_line]="#5b6078"
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#F5E0DC"
 
-# --- GRADIENTS ---
+# CPU, Memory, Network, Proc box outline colors
+theme[cpu_box]="#cba6f7" #Mauve
+theme[mem_box]="#c6a0f6" #Purple
+theme[net_box]="#eba0ac" #Maroon
+theme[proc_box]="#c6a0f6" #Changed to Purple
 
-# Battery graph colors (Pink -> Mauve -> Red)
-theme[batt_start]="#f5bde6"
-theme[batt_mid]="#c6a0f6"
-theme[batt_end]="#ed8796"
+# Box divider line and small boxes line color
+theme[div_line]="#6C7086"
 
-# Temperature graph colors (Mauve -> Maroon -> Red)
+# Temperature graph color (Purple -> Yellow -> Red)
 theme[temp_start]="#c6a0f6"
-theme[temp_mid]="#ee99a0"
-theme[temp_end]="#ed8796"
+theme[temp_mid]="#f9e2af"
+theme[temp_end]="#f38ba8"
 
-# CPU graph colors (Mauve -> Peach -> Red)
+# CPU graph colors (Purple -> Sky -> Lavender)
 theme[cpu_start]="#c6a0f6"
-theme[cpu_mid]="#f5a97f"
-theme[cpu_end]="#ed8796"
+theme[cpu_mid]="#c6a0f6"
+theme[cpu_end]="#b4befe"
 
-# Mem/Disk free meter (Surface 1 -> Overlay 2 -> Subtext 1)
-theme[free_start]="#494d64"
-theme[free_mid]="#939ab7"
-theme[free_end]="#b8c0e0"
+# Mem/Disk free meter (Mauve -> Lavender -> Purple)
+theme[free_start]="#cba6f7"
+theme[free_mid]="#b4befe"
+theme[free_end]="#c6a0f6" #Changed to Purple
 
-# Mem/Disk cached meter (Surface 1 -> Mauve -> Pink)
-theme[cached_start]="#494d64"
-theme[cached_mid]="#c6a0f6"
-theme[cached_end]="#f5bde6"
+# Mem/Disk cached meter (Sapphire -> Purple -> Lavender)
+theme[cached_start]="#c6a0f6"
+theme[cached_mid]="#c6a0f6" #Changed to Purple
+theme[cached_end]="#b4befe"
 
-# Mem/Disk available meter (Surface 1 -> Peach -> Mauve)
-theme[available_start]="#494d64"
-theme[available_mid]="#f5a97f"
-theme[available_end]="#c6a0f6"
+# Mem/Disk available meter (Peach -> Red)
+theme[available_start]="#fab387"
+theme[available_mid]="#eba0ac"
+theme[available_end]="#f38ba8"
 
-# Mem/Disk used meter (Surface 1 -> Maroon -> Red)
-theme[used_start]="#494d64"
-theme[used_mid]="#ee99a0"
-theme[used_end]="#ed8796"
+# Mem/Disk used meter (Purple -> Sky)
+theme[used_start]="#c6a0f6"
+theme[used_mid]="#c6a0f6"
+theme[used_end]="#c6a0f6"
 
-# Download graph colors (Mantle -> Mauve -> Pink)
-theme[download_start]="#1e2030"
-theme[download_mid]="#c6a0f6"
-theme[download_end]="#f5bde6"
+# Download graph colors (Peach -> Red)
+theme[download_start]="#fab387"
+theme[download_mid]="#eba0ac"
+theme[download_end]="#f38ba8"
 
-# Upload graph colors (Mantle -> Pink -> Maroon)
-theme[upload_start]="#1e2030"
-theme[upload_mid]="#f5bde6"
-theme[upload_end]="#ee99a0"
+# Upload graph colors (Purple -> Sky)
+theme[upload_start]="#c6a0f6"
+theme[upload_mid]="#c6a0f6"
+theme[upload_end]="#c6a0f6"
+
+# Process box color gradient for threads, mem and cpu usage (Sapphire -> Mauve)
+theme[process_start]="#c6a0f6"
+theme[process_mid]="#c6a0f6"
+theme[process_end]="#cba6f7"
